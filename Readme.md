@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олеся Шарахматова](https://up.htmlacademy.ru/adaptive/12/user/190451).
-* Наставник: [Андрей Захарченко] (https://up.htmlacademy.ru/adaptive/12/user/202).
+* Наставник: [Андрей Захарченко](https://up.htmlacademy.ru/adaptive/12/user/202).
 
 ---
 
