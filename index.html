@@ -9,7 +9,7 @@
     <header class="page-header">
       <div class="page-header__container">
 
-        <a class="page-header__logo-block" href="#">
+        <a class="page-header__link" href="#">
           <img src="http://placehold.it/150x100">
         </a>
 
@@ -18,17 +18,17 @@
           <a class="main-nav__toggle" href="#"></a>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--catalog">
-              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item--form">
-              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
 
@@ -45,13 +45,13 @@
     <section class="main-menu">
       <div class="main-menu__container">
 
-        <a class="main-menu__link main-menu__link--light" href="interior.html">
+        <a class="main-menu__link main-menu__link--interior" href="interior.html">
           <div class="main-menu__category">
             <h2 class="main-menu__title">Предметы интерьера</h2>
           </div>
         </a>
 
-        <a class="main-menu__link main-menu__link--dark" href="toys.html">
+        <a class="main-menu__link main-menu__link--toys" href="toys.html">
           <div class="main-menu__category">
             <h2 class="main-menu__title">Детские игрушки</h2>
           </div>
@@ -61,9 +61,9 @@
     </section>
 
     <main class="main">
-      <section class="product">
-        <div class="product__container">
+      <div class="main__container">
 
+        <section class="product">
           <div class="product__titles">
             <h1 class="product__title">Вязаные корзинки</h1>
             <span class="product__top">Товар недели</span>
@@ -73,34 +73,31 @@
             <p class="product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="product__table">
               <tr class="product__row">
-                <td class="product__feature"><span>Цвет:</span></td>
-                <td class="product__value"><span>«Тиффани»/серый</span></td>
+                <td class="product__feature">Цвет:</td>
+                <td class="product__value">«Тиффани»/серый</td>
               </tr>
               <tr class="product__row">
-                <td class="product__feature"><span>Диаметр:</span></td>
-                <td class="product__value"><span>25 см</span></td>
+                <td class="product__feature">Диаметр:</td>
+                <td class="product__value">25 см</td>
               </tr>
               <tr class="product__row">
-                <td class="product__feature"><span>Высота:</span></td>
-                <td class="product__value"><span>15 см</span></td>
+                <td class="product__feature">Высота:</td>
+                <td class="product__value">15 см</td>
               </tr>
             </table>
           </div>
 
-          <div class="product__image-container">
+          <figure class="product__image">
             <img src="http://placehold.it/260x315">
-          </div>
+          </figure>
 
           <div class="product__buy">
-            <span class="product__price">Цена: 990 руб.</span>
-            <a class="product__btn btn" href="#">Заказать</a>
+            <p class="product__price">Цена: 990 руб.</p>
+            <a class="product__btn btn modal-btn" href="#">Заказать</a>
           </div>
+        </section>
 
-        </div>
-      </section>
-
-      <section class="about">
-        <div class="about__container">
+        <section class="about">
           <h2 class="about__title">Коротко о нас:</h2>
 
           <ul class="about__list">
@@ -111,66 +108,59 @@
             <li class="about__item about__item--support">Поддержка отечественного производителя</li>
             <li class="about__item about__item--present">Поставляется в подарочной упаковке</li>
           </ul>
+        </section>
 
-        </div>
-      </section>
-
-      <section class="review">
-        <div class="review__container">
+        <section class="review">
           <h2 class="review__title">Отзывы</h2>
 
-          <div class="review__item">
-            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <div class="review__text">
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           </div>
 
           <div class="review__user-info">
             <cite class="review__user-name">Анастасия Красильникова</cite>
-            <a class="review__user-account" href="#">@misssssiskras</a>
+            <a class="review__link" href="#">@misssssiskras</a>
           </div>
 
-          <div class="review__swipe-wrapper">
-            <a class="review__swipe review__swipe--left" href="#"></a>
-            <a class="review__swipe review__swipe--right" href="#"></a>
+          <div class="review__swipe-container">
+            <button class="review__swipe review__swipe--left"  type="button"></button>
+            <button class="review__swipe review__swipe--right" type="button"></button>
           </div>
 
           <a href="#" class="review__btn btn">Написать</a>
-        </div>
+        </section>
 
-      </section>
-
-      <section class="contacts">
-        <div class="contacts__container">
-
+        <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__info">
 
-            <div class="contacts__email">
-              <span class="contacts__email-title">e-mail:</span>
-              <a class="contacts__email-text" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <table class="contacts__info">
+            <tr class="contacts__email">
+              <td class="contacts__email-title">e-mail:</td>
+              <td class="contacts__email-text"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+
+            <tr class="contacts__address">
+              <td class="contacts__address-title">адрес:</td>
+              <td class="contacts__address-text">г. Санкт-Петербург, <br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+            </tr>
+          </table>
+
+            <div class="contacts__map">
+              <img src="http://placehold.it/320x457">
             </div>
+            <a href="contact.html" class="contacts__btn btn">Напишите нам</a>
+        </section>
 
-            <div class="contacts__address">
-              <span class="contacts__address-title">адрес:</span>
-              <p class="contacts__address-text">г. Санкт-Петербург, <br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
-            </div>
-          </div>
-
-          <div class="contacts__map">
-            <img src="http://placehold.it/320x457">
-          </div>
-          <a href="contact.html" class="contacts__btn btn">Напишите нам</a>
-        </div>
-      </section>
-
+      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__container">
 
         <section class="social">
-          <a class="social__link social__link--inst" href="#">Instagram</a>
-          <a class="social__link social__link--fb" href="#">Facebook</a>
-          <a class="social__link social__link--tw" href="#">Twitter</a>
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
         </section>
 
         <section class="page-footer__copyright">
@@ -198,7 +188,7 @@
             <input class="modal__input modal__input--l" id="size-l" type="radio" name="size" value="l">
             <label class="modal__label modal__label--l" for="size-l">L</label>
           </div>
-          <a href="#" class="modal__btn btn">Добавить</a>
+          <button class="modal__btn btn" type="button">Добавить</button>
         </div>
       </form>
 

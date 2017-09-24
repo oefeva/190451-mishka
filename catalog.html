@@ -9,7 +9,7 @@
     <header class="page-header">
       <div class="page-header__container">
 
-        <a class="page-header__logo-block" href="index.html">
+        <a class="page-header__link" href="index.html">
           <img src="http://placehold.it/150x100">
         </a>
 
@@ -18,17 +18,17 @@
           <a class="main-nav__toggle" href="#"></a>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--catalog">
-              <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__item main-nav__item--form">
-              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item main-nav__item--search">
-              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item main-nav__item--basket">
-              <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
 
@@ -42,56 +42,59 @@
         <h1 class="page-title__catalog">Каталог товаров</h1>
       </div>
 
-      <section class="items">
+      <section class="goods">
         <div class="items__container">
 
-          <article class="item item--hare">
-            <a class="item__link item__link--hare" href="hare.html">
+          <article class="item">
+            <a class="item__link" href="hare.html">
               <img src="http://placehold.it/260x196">
             </a>
-            <div class="item__desc item__desc--hare">
-              <div class="item__info item__info--hare">
-                <h2 class="item__title item__title--hare">
-                  <a class="item__link item__link--hare" href="hare.html">Зайчик-попрыгайчик</a>
-                </h2>
-                <span class="item__feature item__feature--hare">Рост 30 см, вес 200 г</span>
+            <div class="item__desc">
+              <div class="item__info">
+                <a class="item__link" href="hare.html">
+                  <h2 class="item__title">Зайчик-попрыгайчик</h2>
+                </a>
+                <span class="item__feature">Рост 30 см, вес 200 г</span>
               </div>
-              <div class="item__price item__price--hare">
-                <span class="item__price-value item__price-value--hare">1 200 руб.</span>
+              <div class="item__price">
+                <span class="item__price-value">1 200 руб.</span>
+                <a class="modal-btn" href="#"></a>
               </div>
             </div>
           </article>
 
-          <article class="item item--laundry-basket">
-            <a class="item__link item__link--laundry-basket" href="basket.html">
+          <article class="item">
+            <a class="item__link" href="basket.html">
               <img src="http://placehold.it/260x196">
             </a>
-            <div class="item__desc item__desc--laundry-basket">
-              <div class="item__info item__info--laundry-basket">
-                <h2 class="item__title item__title--laundry-basket">
-                  <a class="item__link item__link--laundry-basket" href="basket.html">Корзинка для белья</a>
-                </h2>
-                <span class="item__feature item__feature--laundry-basket">Диаметр 15 см, высота 10 см</span>
+            <div class="item__desc">
+              <div class="item__info">
+                <a class="item__link" href="basket.html">
+                  <h2 class="item__title">Корзинка для белья</h2>
+                </a>
+                <span class="item__feature">Диаметр 15 см, высота 10 см</span>
               </div>
-              <div class="item__price item__price--laundry-basket">
-                <span class="item__price-value item__price-value--laundry-basket">690 руб.</span>
+              <div class="item__price">
+                <span class="item__price-value">690 руб.</span>
+                <a class="modal-btn" href="#"></a>
               </div>
             </div>
           </article>
 
-          <article class="item item--toy-basket">
-            <a class="item__link item__link--toy-basket" href="toy-basket.html">
+          <article class="item">
+            <a class="item__link" href="toy-basket.html">
               <img src="http://placehold.it/260x196">
             </a>
-            <div class="item__desc item__desc--toy-basket">
-              <div class="item__info item__info--toy-basket">
-                <h2 class="item__title item__title--toy-basket">
-                  <a class="item__link item__link--toy-basket" href="toy-basket.html">Большая корзинка для игрушек</a>
-                </h2>
-                <span class="item__feature item__feature--toy-basket">Диаметр 30 см, высота 30 см</span>
+            <div class="item__desc">
+              <div class="item__info">
+                <a class="item__link" href="toy-basket.html">
+                  <h2 class="item__title">Большая корзинка для игрушек</h2>
+                </a>
+                <span class="item__feature">Диаметр 30 см, высота 30 см</span>
               </div>
-              <div class="item__price item__price--toy-basket">
-                <span class="item__price-value item__price-value--toy-basket">1 500 руб.</span>
+              <div class="item__price">
+                <span class="item__price-value">1 500 руб.</span>
+                <a class="modal-btn" href="#"></a>
               </div>
             </div>
           </article>
@@ -102,9 +105,7 @@
       <article class="production">
         <div class="production__container">
 
-          <div class="production__title-block">
-            <h3 class="production__title">Процесс производства</h3>
-          </div>
+          <h3 class="production__title">Процесс производства</h3>
 
           <div class="production__pic">
             <img src="http://placehold.it/260x150">
@@ -123,9 +124,9 @@
       <div class="page-footer__container">
 
         <section class="social">
-          <a class="social__link social__link--inst" href="#">Instagram</a>
-          <a class="social__link social__link--fb" href="#">Facebook</a>
-          <a class="social__link social__link--tw" href="#">Twitter</a>
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
         </section>
 
         <section class="page-footer__copyright">
@@ -153,7 +154,7 @@
             <input class="modal__input modal__input--l" id="size-l" type="radio" name="size" value="l">
             <label class="modal__label modal__label--l" for="size-l">L</label>
           </div>
-          <a href="#" class="modal__btn btn">Добавить</a>
+          <button class="modal__btn btn" type="button">Добавить</button>
         </div>
       </form>
 
