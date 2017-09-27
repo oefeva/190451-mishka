@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Вязание на заказ</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__container">
+
+        <a class="page-header__link" href="index.html">
+          <img src="http://placehold.it/150x100">
+        </a>
+
+        <nav class="main-nav">
+
+          <button class="main-nav__toggle" type="button"></button>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="page-title">
+        <h1 class="page-title__order">Вязание на заказ</h1>
+      </div>
+
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form__container">
+
+          <div class="form__intro">
+            <p class="form__intro-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          </div>
+
+          <div class="form__type">
+            <h3 class="form__subtitle">Тип</h3>
+
+              <div class="form__inner">
+                <input class="form__input-radio" id="accessory" type="radio" name="type" value="accessory" checked>
+                <label class="form__label" for="accessory">Аксессуар для интерьера</label>
+              </div>
+
+              <div class="form__inner">
+                <input class="form__input-radio" id="toy" type="radio" name="type" value="toy">
+                <label class="form__label" for="toy">Детская игрушка</label>
+              </div>
+          </div>
+
+          <div class="form__color">
+            <h3 class="form__subtitle">Цвет</h3>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="white" id="white" checked>
+              <label class="form__label" for="white">Белый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="grey" id="grey" checked>
+              <label class="form__label" for="grey">Серый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="tiffany" id="tiffany">
+              <label class="form__label" for="tiffany">«Тиффани»</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="black" id="black">
+              <label class="form__label" for="black">Черный</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="pink" id="pink">
+              <label class="form__label" for="pink">Розовый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input-checkbox" type="checkbox" name="orange" id="orange">
+              <label class="form__label" for="orange">Оранжевый</label>
+            </div>
+          </div>
+
+          <div class="form__name">
+            <h3 class="form__subtitle">ФИО</h3>
+
+            <div class="form__inner">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input-text" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </div>
+
+            <div class="form__inner">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__input-text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            </div>
+
+            <div class="form__inner">
+              <label class="form__label" for="father-name">Отчество:</label>
+              <input class="form__input-text" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+
+          <div class="form__phone">
+            <h3 class="form__subtitle">Тел</h3>
+            <input class="form__input-tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+          </div>
+
+          <div class="form__mail">
+            <h3 class="form__subtitle">E-Mail</h3>
+            <input class="form__input-email" type="email" name="e-mail" placeholder="Ваш Email*" required>
+          </div>
+
+          <div class="form__extra">
+            <h3 class="form__subtitle">Доп</h3>
+            <textarea class="form__extra-text" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+
+          <div class="form__note">
+            <p class="form__note-text">*Поля обязательны для заполнения</p>
+          </div>
+
+          <button class="form__btn btn" type="submit">Отправить заказ</button>
+
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+
+        <section class="social">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+        </section>
+
+        <section class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span>Разработано</span>
+          </a>
+        </section>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
