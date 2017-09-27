@@ -15,7 +15,7 @@
 
         <nav class="main-nav">
 
-          <a class="main-nav__toggle" href="#"></a>
+          <button class="main-nav__toggle" type="button"></button>
 
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -49,101 +49,86 @@
             <p class="form__intro-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           </div>
 
-          <div class="type">
-            <div class="type__container">
-              <h3 class="form__subtitle">Тип</h3>
+          <div class="form__type">
+            <h3 class="form__subtitle">Тип</h3>
 
-                <div class="type__inner">
-                  <input class="type__input" id="accessory" type="radio" name="type" value="accessory" checked>
-                  <label class="type__label" for="accessory">Аксессуар для интерьера</label>
-                </div>
+              <div class="form__inner">
+                <input class="form__input" id="accessory" type="radio" name="type" value="accessory" checked>
+                <label class="form__label" for="accessory">Аксессуар для интерьера</label>
+              </div>
 
-                <div class="type__inner">
-                  <input class="type__input" id="toy" type="radio" name="type" value="toy">
-                  <label class="type__label"  for="toy">Детская игрушка</label>
-                </div>
+              <div class="form__inner">
+                <input class="form__input" id="toy" type="radio" name="type" value="toy">
+                <label class="form__label"  for="toy">Детская игрушка</label>
+              </div>
+          </div>
+
+          <div class="form__color">
+            <h3 class="form__subtitle">Цвет</h3>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="white" id="white" checked>
+              <label class="form__label" for="white">Белый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="grey" id="grey" checked>
+              <label class="form__label" for="grey">Серый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="tiffany" id="tiffany">
+              <label class="form__label" for="tiffany">«Тиффани»</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="black" id="black">
+              <label class="form__label" for="black">Черный</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="pink" id="pink">
+              <label class="form__label" for="pink">Розовый</label>
+            </div>
+
+            <div class="form__inner">
+              <input class="form__input" type="checkbox" name="orange" id="orange">
+              <label class="form__label" for="orange">Оранжевый</label>
             </div>
           </div>
 
-          <div class="color">
-            <div class="color__container">
+          <div class="form__name">
+            <h3 class="form__subtitle">ФИО</h3>
 
-              <h3 class="form__subtitle">Цвет</h3>
+            <div class="form__inner">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </div>
 
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="white" id="white" checked>
-                <label for="white" class="color__label">Белый</label>
-              </div>
+            <div class="form__inner">
+              <label class="form__label" for="surname">Фамилия:</label>
+              <input class="form__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            </div>
 
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="grey" id="grey" checked>
-                <label for="grey" class="color__label">Серый</label>
-              </div>
-
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="tiffany" id="tiffany">
-                <label for="tiffany" class="color__label">«Тиффани»</label>
-              </div>
-
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="black" id="black">
-                <label for="black" class="color__label">Черный</label>
-              </div>
-
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="pink" id="pink">
-                <label for="pink" class="color__label">Розовый</label>
-              </div>
-
-              <div class="color__inner">
-                <input class="color__input" type="checkbox" name="orange" id="orange">
-                <label for="orange" class="color__label">Оранжевый</label>
-              </div>
-
+            <div class="form__inner">
+              <label class="form__label" for="father-name">Отчество:</label>
+              <input class="form__input" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
             </div>
           </div>
 
-          <div class="name">
-            <div class="name__container">
-              <h3 class="form__subtitle">ФИО</h3>
-
-              <div class="name__inner">
-                <label class="name__label" for="name">Имя:</label>
-                <input class="name__input" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
-              </div>
-
-              <div class="name__inner">
-                <label class="name__label" for="surname">Фамилия:</label>
-                <input class="name__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              </div>
-
-              <div class="name__inner">
-                <label class="name__label" for="father-name">Отчество:</label>
-                <input class="name__input" id="father-name" type="text" name="father-name" placeholder="Отчество, если желаете">
-              </div>
-
-            </div>
+          <div class="form__phone">
+            <h3 class="form__subtitle">Тел</h3>
+            <input class="form__input" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
           </div>
 
-          <div class="phone">
-            <div class="phone__container">
-              <h3 class="form__subtitle">Тел</h3>
-              <input class="phone__input" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
-            </div>
+          <div class="form__mail">
+            <h3 class="form__subtitle">E-Mail</h3>
+            <input class="form__input" type="email" name="e-mail" placeholder="Ваш Email*" required>
           </div>
 
-          <div class="mail">
-            <div class="mail__container">
-              <h3 class="form__subtitle">E-Mail</h3>
-              <input class="mail__input" type="email" name="e-mail" placeholder="Ваш Email*" required>
-            </div>
-          </div>
-
-          <div class="extra">
-            <div class="extra__container">
-              <h3 class="form__subtitle">Доп</h3>
-              <textarea class="extra__text" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </div>
+          <div class="form__extra">
+            <h3 class="form__subtitle">Доп</h3>
+            <textarea class="form__extra-text" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
 
           <div class="form__note">
