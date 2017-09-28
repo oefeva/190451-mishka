@@ -1,0 +1,25 @@
+.contacts {
+  border: 1px solid #000;
+}
+
+.contacts__title {
+  color: #000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__info {
+  color: #444;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.contacts__map {
+  background-color: #c6c6c6;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 457px;
+}

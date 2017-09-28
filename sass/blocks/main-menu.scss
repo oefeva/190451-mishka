@@ -1,0 +1,19 @@
+.main-menu {
+  border: 1px solid #000;
+}
+
+.main-menu__link {
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &--interior {
+    background-color: #63d1bb;
+  }
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
