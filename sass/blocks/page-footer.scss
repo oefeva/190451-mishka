@@ -1,3 +1,7 @@
 .page-footer {
   border: 1px solid #000000;
 }
+
+.page-footer__container {
+  @include container;
+}

@@ -1,3 +1,7 @@
 .main {
   border: 1px solid #000000;
 }
+
+.main__container {
+  @include container;
+}

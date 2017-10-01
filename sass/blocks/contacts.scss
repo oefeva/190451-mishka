@@ -2,6 +2,10 @@
   border: 1px solid #000000;
 }
 
+.contacts__container {
+  @include container;
+}
+
 .contacts__title {
   color: #000000;
   font-size: 18px;
@@ -17,6 +21,7 @@
 }
 
 .contacts__map {
+  margin: 0 auto;
   background-color: #c6c6c6;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;

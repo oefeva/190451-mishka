@@ -1,8 +1,10 @@
+/* global */
+@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
-@import "global/normalize.scss";
 @import "global/scaffolding.scss";
 @import "global/variables.scss";
+/* blocks */
 @import "blocks/about.scss";
 @import "blocks/btn.scss";
 @import "blocks/contacts.scss";

@@ -1,5 +1,9 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -8,23 +12,11 @@ body {
   color: #000000;
 }
 
-// img {
-//   width: 100%;
-//   height: auto;
-// }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+img {
+  width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
-}
-
-input:active,
-input:focus,
-input:hover {
-  outline: none;
 }

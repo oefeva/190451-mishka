@@ -1,5 +1,6 @@
 .modal {
   border: 1px solid #000000;
+  @include container;
 }
 
 .modal__title {
