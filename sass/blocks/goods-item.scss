@@ -1,5 +1,19 @@
 .goods-item {
-  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ededed;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 27px;
+  width: 260px;
+
+  &:hover {
+    box-shadow: 0 5px 5px #c6c6c6;
+  }
+
+  &:active {
+    box-shadow: 0 3px 4px #c6c6c6;
+  }
 }
 
 .goods-item__title {
@@ -7,6 +21,15 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.goods-item__desc {
+  display: flex;
+  flex-direction: column;
 }
 
 .goods-item__feature {
@@ -14,6 +37,24 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
+  padding-left: 27px;
+  padding-right: 27px;
+  position: absolute;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: 27px;
+    width: 204px;
+    height: 1px;
+    background-color: #ececec;
+  }
+}
+
+.goods-item__price {
+  margin-top: 70px;
+  padding-left: 30px;
 }
 
 .goods-item__price-value {

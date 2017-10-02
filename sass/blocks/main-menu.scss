@@ -1,25 +1,48 @@
 .main-menu {
   width: 100%;
-  border: 1px solid #000000;
+  margin-top: -58px;
 }
 
 .main-menu__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-menu__link {
-  display: block;
-  color: #ffffff;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
 
   &--interior {
     background-color: #63d1bb;
+    position: relative;
   }
 
   &--toys {
     background-color: #56c3b2;
+    position: relative;
+  }
+}
+
+.main-menu__title {
+  padding: 10px 150px 13px 60px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.main-menu__img {
+  height: 65px;
+  width: 50px;
+
+  &--interior {
+    position: absolute;
+    top: 22px;
+    right: 65px;
+  }
+
+  &--toys {
+    position: absolute;
+    top: 22px;
+    right: 65px;
   }
 }

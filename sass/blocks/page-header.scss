@@ -1,8 +1,17 @@
 .page-header {
   width: 100%;
-  border: 1px solid #000000;
 }
 
 .page-header__container {
+  display: flex;
+  justify-content: flex-end;
+
   @include container;
+}
+
+.page-header__link {
+  width: 88px;
+  margin-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

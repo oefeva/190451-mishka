@@ -4,3 +4,33 @@
   line-height: 24px;
   font-weight: 700;
 }
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  margin-top: 29px;
+  margin-right: -5px;
+}
+
+.main-nav__list {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 63px;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.main-nav__link {
+  color: #444444;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #ececec;
+  text-align: center;
+}

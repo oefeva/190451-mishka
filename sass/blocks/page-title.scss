@@ -1,5 +1,6 @@
 .page-title {
-  border: 1px solid #000000;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 .page-title__catalog {
@@ -7,6 +8,10 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 76px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .page-title__order {
@@ -14,4 +19,9 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 76px;
+  margin-top: 0;
+  margin-bottom: 9px;
+  text-align: center;
 }

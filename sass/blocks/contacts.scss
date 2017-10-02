@@ -1,5 +1,5 @@
 .contacts {
-  border: 1px solid #000000;
+  margin-top: 45px;
 }
 
 .contacts__container {
@@ -14,10 +14,30 @@
 }
 
 .contacts__info {
+  margin-bottom: 34px;
   color: #444444;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  margin-top: 23px;
+}
+
+.contacts__email-text {
+  padding-left: 22px;
+}
+
+.contacts__address-title {
+  vertical-align: top;
+  padding-top: 27px;
+}
+
+.contacts__address-text {
+  padding-left: 23px;
+  padding-top: 27px;
+}
+
+.contacts__link {
+  color: #444444;
 }
 
 .contacts__map {
@@ -27,4 +47,8 @@
   background-repeat: no-repeat;
   width: 320px;
   height: 457px;
+}
+
+.contacts__btn {
+  margin: 38px auto;
 }
