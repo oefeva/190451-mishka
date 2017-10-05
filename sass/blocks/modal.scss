@@ -4,7 +4,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 20;
+  z-index: 1;
   margin-top: -168px;
   margin-left: -160px;
   width: 320px;
@@ -26,6 +26,12 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .modal__title {
   color: #000000;
   font-size: 25px;
@@ -33,7 +39,6 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-
 
 .modal__subtitle {
   color: #444444;
@@ -43,10 +48,8 @@
   margin-bottom: 25px;
 }
 
-.modal__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.modal__wrapper {
+  margin-bottom: 40px;
 }
 
 .modal__label {

@@ -1,9 +1,6 @@
 .production {
   width: 260px;
-  display: flex;
-  flex-direction: column;
-  margin: 15px auto 60px;
-  align-items: center;
+  margin-bottom: 30px;
   border: 1px solid #ededed;
 
   &:hover {
@@ -18,17 +15,24 @@
 .production__container {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
 }
 
 .production__title {
-  width: 135px;
-  padding-left: 90px;
-  padding-top: 10px;
   color: #000000;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 0;
   margin-bottom: 25px;
+}
+
+.production__img {
+  margin-bottom: 20px;
 }
 
 .production__description {
@@ -36,15 +40,12 @@
   line-height: 24px;
   font-weight: 400;
   padding-left: 35px;
-  padding-right: 40px;
-  margin-top: 25px;
+  padding-right: 35px;
 }
 
 .production__btn {
   width: 190px;
   padding: 15px 15px;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 }

@@ -1,7 +1,8 @@
 .review {
   display: flex;
   flex-direction: column;
-  margin-top: -42px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .review__title {
@@ -23,6 +24,7 @@
 .review__user-info {
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .review__user-name {
@@ -31,6 +33,7 @@
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
+  margin-bottom: 5px;
 }
 
 .review__link {
@@ -38,12 +41,11 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
-  margin-top: 5px;
 }
 
 .review__swipe-container {
   display: flex;
-  margin-top: 28px;
+  margin-bottom: 40px;
 }
 
 .review__swipe {
@@ -51,10 +53,8 @@
   background-color: transparent;
   border: 1px solid #ececec;
   padding: 7px 35px;
-  margin-bottom: -2px;
 
-  &--left {
+  &:first-child {
     border-right: none;
-    margin-right: 0;
   }
 }

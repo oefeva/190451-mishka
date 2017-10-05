@@ -1,23 +1,17 @@
 .main-nav {
-  color: #000000;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.main-nav__toggle {
-  background-color: transparent;
-  border: none;
-  margin-top: 29px;
-  margin-right: -5px;
+  width: 320px;
+  position: absolute;
+  z-index: 1;
+  top: 43px;
+  left: 50%;
+  margin-left: -160px;
 }
 
 .main-nav__list {
-  display: none;
-  z-index: 1;
-  width: 100%;
-  position: absolute;
-  top: 63px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  // display: none;
   background-color: #ffffff;
   list-style: none;
 }
@@ -27,10 +21,10 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  position: relative;
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
+  margin: 0;
   border-bottom: 1px solid #ececec;
   text-align: center;
 }
