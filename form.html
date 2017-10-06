@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -10,13 +11,14 @@
       <div class="page-header__container">
 
         <a class="page-header__link" href="index.html">
-          <img src="http://placehold.it/150x100">
+          <img src="img/logo-mobile.svg">
         </a>
 
+        <button class="page-header__toggle-nav" type="button">
+          <img src="img/icon-menu-open.svg" alt="menu">
+        </button>
+
         <nav class="main-nav">
-
-          <button class="main-nav__toggle" type="button"></button>
-
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -31,16 +33,16 @@
               <a class="main-nav__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-
         </nav>
+
       </div>
     </header>
 
-    <main class="main">
+    <div class="page-title">
+      <h1 class="page-title__order">Вязание на заказ</h1>
+    </div>
 
-      <div class="page-title">
-        <h1 class="page-title__order">Вязание на заказ</h1>
-      </div>
+    <main class="main">
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__container">
@@ -54,12 +56,12 @@
 
               <div class="form__inner">
                 <input class="form__input-radio" id="accessory" type="radio" name="type" value="accessory" checked>
-                <label class="form__label" for="accessory">Аксессуар для интерьера</label>
+                <label class="form__label form__label--type" for="accessory">Аксессуар для интерьера</label>
               </div>
 
               <div class="form__inner">
                 <input class="form__input-radio" id="toy" type="radio" name="type" value="toy">
-                <label class="form__label" for="toy">Детская игрушка</label>
+                <label class="form__label form__label--type" for="toy">Детская игрушка</label>
               </div>
           </div>
 
@@ -68,32 +70,32 @@
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="white" id="white" checked>
-              <label class="form__label" for="white">Белый</label>
+              <label class="form__label form__label--color" for="white">Белый</label>
             </div>
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="grey" id="grey" checked>
-              <label class="form__label" for="grey">Серый</label>
+              <label class="form__label form__label--color" for="grey">Серый</label>
             </div>
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="tiffany" id="tiffany">
-              <label class="form__label" for="tiffany">«Тиффани»</label>
+              <label class="form__label form__label--color" for="tiffany">«Тиффани»</label>
             </div>
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="black" id="black">
-              <label class="form__label" for="black">Черный</label>
+              <label class="form__label form__label--color" for="black">Черный</label>
             </div>
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="pink" id="pink">
-              <label class="form__label" for="pink">Розовый</label>
+              <label class="form__label form__label--color" for="pink">Розовый</label>
             </div>
 
             <div class="form__inner">
               <input class="form__input-checkbox" type="checkbox" name="orange" id="orange">
-              <label class="form__label" for="orange">Оранжевый</label>
+              <label class="form__label form__label--color" for="orange">Оранжевый</label>
             </div>
           </div>
 
@@ -118,17 +120,17 @@
 
           <div class="form__phone">
             <h3 class="form__subtitle">Тел</h3>
-            <input class="form__input-tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+            <input class="form__input-text" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
           </div>
 
           <div class="form__mail">
             <h3 class="form__subtitle">E-Mail</h3>
-            <input class="form__input-email" type="email" name="e-mail" placeholder="Ваш Email*" required>
+            <input class="form__input-text" type="email" name="e-mail" placeholder="Ваш Email*" required>
           </div>
 
           <div class="form__extra">
             <h3 class="form__subtitle">Доп</h3>
-            <textarea class="form__extra-text" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__input-text form__input-text--extra" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
 
           <div class="form__note">
@@ -145,19 +147,25 @@
       <div class="page-footer__container">
 
         <section class="social">
-          <a class="social__link social__link--instagram" href="#">Instagram</a>
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
+          <a class="social__link" href="#">
+            <img class="social__icon" src="img/icon-insta.svg" alt="instagram">Instagram</a>
+          <a class="social__link" href="#">
+            <img class="social__icon" src="img/icon-fb.svg" alt="facebook">Facebook</a>
+          <a class="social__link" href="#">
+            <img class="social__icon" src="img/icon-twitter.svg" alt="twitter">Twitter</a>
         </section>
 
         <section class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
+            <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="logo">
           </a>
         </section>
 
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,60 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.review__title {
+  color: #000000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review__text {
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.review__user-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.review__user-name {
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.review__link {
+  color: #444444;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.review__swipe-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.review__swipe {
+  width: 130px;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  padding: 7px 35px;
+
+  &:first-child {
+    border-right: none;
+  }
+}

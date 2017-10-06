@@ -1,0 +1,23 @@
+.page-header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include container;
+}
+
+.page-header__toggle-nav {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+}

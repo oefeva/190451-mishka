@@ -1,0 +1,30 @@
+.main-nav {
+  width: 320px;
+  position: absolute;
+  z-index: 1;
+  top: 43px;
+  left: 50%;
+  margin-left: -160px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  // display: none;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.main-nav__link {
+  color: #444444;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  border-bottom: 1px solid #ececec;
+  text-align: center;
+}
