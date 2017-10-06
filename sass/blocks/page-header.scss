@@ -12,10 +12,6 @@
   @include container;
 }
 
-.page-header__link {
-
-}
-
 .page-header__toggle-nav {
   background-color: transparent;
   border: none;
@@ -24,8 +20,4 @@
   right: 25px;
   width: 30px;
   height: 30px;
-}
-
-.page-header__toggle {
-    display: block;
 }

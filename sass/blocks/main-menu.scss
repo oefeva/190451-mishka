@@ -12,6 +12,10 @@
 
 .main-menu__link {
   display: flex;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 
   &--interior {
     background-color: #63d1bb;
@@ -23,9 +27,16 @@
 }
 
 .main-menu__title {
-  padding: 10px 150px 13px 30px;
+  width: 150px;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+}
+
+.main-menu__icon {
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
 }
