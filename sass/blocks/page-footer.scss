@@ -1,6 +1,6 @@
 .page-footer {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: $color-background-footer;
 }
 
 .page-footer__container {
@@ -20,5 +20,5 @@
   padding: 20px 35px;
   border-top: 1px solid #ececec;
   text-decoration: none;
-  color: #000000;
+  color: $color-text;
 }

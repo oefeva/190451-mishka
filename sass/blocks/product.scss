@@ -9,7 +9,7 @@
 }
 
 .product__title {
-  color: #000000;
+  color: $color-title;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -17,7 +17,7 @@
 }
 
 .product__top {
-  color: #63d1bb;
+  color: $color-text-top;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -25,7 +25,7 @@
 }
 
 .product__desc {
-  color: #444444;
+  color: $color-text-paragraph;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -33,7 +33,7 @@
 
 .product__table {
   width: 260px;
-  color: #444444;
+  color: $color-text-table;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -42,7 +42,7 @@
 }
 
 .product__row {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-border-table;
 }
 
 .product__feature,
@@ -63,7 +63,7 @@
 }
 
 .product__price {
-  color: #444444;
+  color: $color-text-price;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

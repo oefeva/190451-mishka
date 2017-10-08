@@ -18,17 +18,17 @@
   padding-left: 30px;
 
   &--interior {
-    background-color: #63d1bb;
+    background-color: $color-background-interior;
   }
 
   &--toys {
-    background-color: #56c3b2;
+    background-color: $color-background-toys;
   }
 }
 
 .main-menu__title {
   width: 150px;
-  color: #ffffff;
+  color: $color-main-menu-title;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;

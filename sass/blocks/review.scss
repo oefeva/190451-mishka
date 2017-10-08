@@ -6,7 +6,7 @@
 }
 
 .review__title {
-  color: #000000;
+  color: $color-title;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -14,7 +14,7 @@
 }
 
 .review__text {
-  color: #444444;
+  color: $color-text-paragraph;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -28,7 +28,7 @@
 }
 
 .review__user-name {
-  color: #000000;
+  color: $color-text;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 .review__link {
-  color: #444444;
+  color: $color-link;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
@@ -51,7 +51,7 @@
 .review__swipe {
   width: 130px;
   background-color: transparent;
-  border: 1px solid #ececec;
+  border: 1px solid $color-border;
   padding: 7px 35px;
 
   &:first-child {
