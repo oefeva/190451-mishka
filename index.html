@@ -21,17 +21,29 @@
 
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <li class="main-nav__item main-nav__logo"></li>
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor">
+              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <img class="main-nav__icon-search" src="img/icon-search.svg" alt="search">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item main-nav__item--cart">
+              <img class="main-nav__icon-cart" src="img/icon-cart.svg" alt="cart">
+              <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--new main-nav__item--desktop  main-nav__item--desktop-incolor">
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale main-nav__item--desktop main-nav__item--desktop-incolor">
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item main-nav__item--delivery main-nav__item--tablet  main-nav__item--incolor">
+              <span>Бесплатная доставка по России</span>
             </li>
           </ul>
         </nav>
