@@ -40,3 +40,39 @@
   height: 60px;
   margin-left: auto;
 }
+
+@media #{$tablet} {
+  .main-menu {
+    margin-top: -127px;
+  }
+
+  .main-menu__container {
+    flex-direction: row;
+  }
+
+  .main-menu__link {
+    width: 335px;
+    padding-top: 28px;
+    padding-left: 36px;
+  }
+
+  .main-menu__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media #{$desktop} {
+  .main-menu {
+    margin-top: -191px;
+  }
+
+  .main-menu__link {
+    width: 525px;
+  }
+
+  .main-menu__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
