@@ -26,9 +26,37 @@
   font-weight: 700;
 }
 
-
 @media #{$tablet} {
   .promo {
     border-top: none;
+  }
+
+  .promo__container {
+    padding-top: 81px;
+    padding-right: 30px;
+    padding-bottom: 500px;
+    padding-left: 30px;
+    background-size: cover;
+    background-position: center -35px;
+  }
+
+  .promo__title {
+    width: 500px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media #{$desktop} {
+  .promo__container {
+    padding-top: 82px;
+    padding-bottom: 550px;
+    background-position: center -95px;
+  }
+
+  .promo__title {
+    width: 650px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
