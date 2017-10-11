@@ -35,6 +35,10 @@
 }
 
 @media #{$tablet} {
+  .about {
+    padding-bottom: 10px;
+  }
+
   .about__title {
     font-size: 43px;
     line-height: 50px;
@@ -43,9 +47,9 @@
 
   .about__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     max-height: 600px;
+    margin-bottom: 0;
   }
 
   .about__item {
@@ -64,6 +68,7 @@
 @media #{$desktop} {
   .about {
     padding-left: 175px;
+    margin-bottom: 10px;
   }
 
   .about__title {
