@@ -54,3 +54,46 @@
 .contacts__btn {
   margin: 38px auto;
 }
+
+@media #{$tablet} {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 48px;
+  }
+
+  .contacts__info {
+    font-size: 17px;
+  }
+}
+
+@media #{$desktop} {
+  .contacts {
+    padding-top: 125px;
+    padding-left: 225px;
+    position: relative;
+    margin-bottom: 125px;
+  }
+
+  .contacts__title {
+    color: $color-title;
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+  }
+
+  .contacts__btn {
+    width: 230px;
+    position: absolute;
+    left: 280px;
+    bottom: -60px;
+  }
+}
