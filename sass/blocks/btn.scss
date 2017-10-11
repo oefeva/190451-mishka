@@ -23,3 +23,9 @@
     background-color: $color-background-btn-active;
   }
 }
+
+@media #{$tablet} {
+  .btn {
+    width: 290px;
+  }
+}
