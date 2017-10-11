@@ -75,6 +75,7 @@
   .product {
     padding-top: 46px;
     position: relative;
+    margin-bottom: 87px;
   }
 
   .product__titles {
@@ -137,6 +138,10 @@
 }
 
 @media #{$desktop} {
+  .product {
+    margin-bottom: 125px;
+  }
+
   .product__titles {
     flex-direction: row-reverse;
     justify-content: flex-end;

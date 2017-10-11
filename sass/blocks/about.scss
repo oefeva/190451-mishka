@@ -33,3 +33,45 @@
   width: 35px;
   margin-bottom: 10px;
 }
+
+@media #{$tablet} {
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 48px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 600px;
+  }
+
+  .about__item {
+    height: 125px;
+    width: 335px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 35px;
+  }
+
+  .about__img {
+    margin-bottom: 10px;
+  }
+}
+
+@media #{$desktop} {
+  .about {
+    padding-left: 175px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__list {
+    width: 700px;
+  }
+}
