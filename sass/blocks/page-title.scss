@@ -23,6 +23,7 @@
 @media #{$tablet} {
   .page-title {
     position: relative;
+    padding: 20px 30px 80px 30px;
 
     &::after {
       position: absolute;
@@ -35,15 +36,40 @@
       border-top: 1px solid #ececec;
     }
   }
-}
 
+  .page-title__catalog {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-title__order {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
 
 @media #{$desktop} {
   .page-title {
+    padding: 20px 30px 100px 30px;
+
     &::after {
       top: -74px;
       background-color: #f1f1f1;
       height: 74px;
     }
+  }
+
+  .page-title__catalog {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-title__order {
+    margin: 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
