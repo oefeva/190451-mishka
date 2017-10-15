@@ -19,10 +19,26 @@
 
   &--interior {
     background-color: $color-background-interior;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
     background-color: $color-background-toys;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 }
 
@@ -33,6 +49,18 @@
   line-height: 24px;
   font-weight: 700;
   margin: 0;
+
+  &--interior {
+    &:active {
+      color: #97e2d2;
+    }
+  }
+
+  &--toys {
+    &:active {
+      color: #8dd5c9;
+    }
+  }
 }
 
 .main-menu__icon {

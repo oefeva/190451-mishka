@@ -51,6 +51,14 @@
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 5px;
+
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 }
 
 .goods-item__feature {

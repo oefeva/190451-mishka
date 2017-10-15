@@ -26,6 +26,14 @@
   padding-bottom: 27px;
   padding-left: 90px;
   margin: 0;
+
+  &:hover {
+    color: #b0b0b0;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 }
 
 .main-nav__item {

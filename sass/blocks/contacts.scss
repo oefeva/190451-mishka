@@ -45,6 +45,19 @@
 
 .contacts__link {
   color: $color-link;
+  border-bottom: 1px solid #62d1ba;
+  display: inline-block;
+  padding-bottom: 2px;
+
+  &:hover {
+    color: #59c5b4;
+    border-color: #46c1ae;
+  }
+
+  &:active {
+    color: #d3ede8;
+    border-color: #ecf9f7;
+  }
 }
 
 .contacts__map {
