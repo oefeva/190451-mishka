@@ -74,8 +74,8 @@
 @media #{$tablet} {
   .product {
     padding-top: 46px;
+    padding-bottom: 87px;
     position: relative;
-    margin-bottom: 87px;
   }
 
   .product__titles {
@@ -139,7 +139,8 @@
 
 @media #{$desktop} {
   .product {
-    margin-bottom: 125px;
+    padding-top: 78px;
+    padding-bottom: 125px;
   }
 
   .product__titles {
@@ -174,7 +175,7 @@
   }
 
   .product__table {
-    margin-bottom: 88px;
+    margin-bottom: 55px;
   }
 
   .product__price {

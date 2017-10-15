@@ -14,7 +14,7 @@
   display: flex;
   padding-top: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   padding-left: 30px;
 
   &--interior {
@@ -65,7 +65,6 @@
 @media #{$desktop} {
   .main-menu {
     margin-top: -191px;
-    margin-bottom: 78px;
   }
 
   .main-menu__link {
