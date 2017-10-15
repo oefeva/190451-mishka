@@ -60,32 +60,38 @@
     &:nth-child(1) {
       order: 0;
       margin-bottom: 75px;
+      padding-right: 80px;
     }
 
     &:nth-child(2) {
       order: 2;
       margin-bottom: 75px;
+      padding-right: 50px;
     }
 
     &:nth-child(3) {
       order: 4;
+      padding-right: 70px;
     }
 
     &:nth-child(4) {
       order: 1;
       margin-left: 25px;
       margin-bottom: 75px;
+      padding-right: 50px;
     }
 
     &:nth-child(5) {
       order: 3;
       margin-left: 25px;
       margin-bottom: 75px;
+      padding-right: 10px;
     }
 
     &:nth-child(6) {
       order: 5;
       margin-left: 25px;
+      padding-right: 50px;
     }
   }
 
@@ -97,7 +103,7 @@
 @media #{$desktop} {
   .about {
     padding-left: 175px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
 
   .about__title {
