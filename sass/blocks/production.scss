@@ -93,12 +93,14 @@
   .production {
     width: 1050px;
     margin-bottom: 103px;
+
+    position: relative;
+    padding-bottom: 61px;
   }
 
   .production__container {
     padding-bottom: 0;
-    flex-wrap: wrap;
-    max-height: 455px;
+    align-items: flex-end;
   }
 
   .production__title {
@@ -118,6 +120,9 @@
 
   .production__video {
     width: 680px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .production__img-preview {
@@ -128,6 +133,6 @@
   .production__btn {
     width: 230px;
     margin: 0;
-    margin-left: 77px;
+    margin-right: 55px;
   }
 }
