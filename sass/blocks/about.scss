@@ -36,7 +36,7 @@
 
 @media #{$tablet} {
   .about {
-    padding-bottom: 10px;
+    padding-bottom: 63px;
   }
 
   .about__title {
@@ -48,16 +48,45 @@
   .about__list {
     display: flex;
     flex-wrap: wrap;
-    max-height: 600px;
     margin-bottom: 0;
+    flex-direction: row;
   }
 
   .about__item {
-    height: 125px;
-    width: 335px;
+    width: 310px;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 35px;
+
+    &:nth-child(1) {
+      order: 0;
+      margin-bottom: 75px;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+      margin-bottom: 75px;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 1;
+      margin-left: 25px;
+      margin-bottom: 75px;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+      margin-left: 25px;
+      margin-bottom: 75px;
+    }
+
+    &:nth-child(6) {
+      order: 5;
+      margin-left: 25px;
+    }
   }
 
   .about__img {
