@@ -1,15 +1,11 @@
-.form__container {
-  @include container;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
 .form__intro-text {
   color: $color-text-paragraph;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .form__subtitle {
@@ -223,6 +219,14 @@
   margin-bottom: 30px;
 }
 
+@media #{$mobile-only} {
+  .form__container {
+    @include container;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
 @media #{$tablet} {
   .form {
     position: relative; // for .form__btn
@@ -231,12 +235,16 @@
   .form__container {
     padding-top: 60px;
     padding-bottom: 30px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .form__intro-text {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 72px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__subtitle {
@@ -248,6 +256,8 @@
   .form__type {
     flex-direction: row;
     margin-bottom: 11px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__inner {
@@ -310,6 +320,8 @@
     flex-direction: row;
     padding-top: 66px;
     padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 25px;
   }
 
@@ -347,6 +359,8 @@
     flex-direction: row;
     margin-bottom: 8px;
     padding-top: 43px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__name-container {
@@ -365,6 +379,8 @@
     padding-top: 65px;
     padding-bottom: 20px;
     margin-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__mail {
@@ -374,6 +390,8 @@
     padding-top: 30px;
     padding-bottom: 53px;
     margin-bottom: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__extra {
@@ -381,6 +399,8 @@
     justify-content: space-between;
     margin-bottom: 50px;
     padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form__input-text {
@@ -425,12 +445,15 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 500px;
   }
 
   .form__btn {
     width: 230px;
     position: absolute;
     bottom: 50px;
+    left: 50px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -439,17 +462,18 @@
 @media #{$desktop} {
   .form__container {
     padding-top: 110px;
-    padding-bottom: 27px;
+    padding-bottom: 31px;
   }
 
   .form__intro-text {
-    padding-left: 175px;
-    padding-right: 175px;
-    margin-bottom: 72px;
+    padding-left: 225px;
+    padding-right: 225px;
+    margin-bottom: 73px;
   }
 
   .form__type {
-    padding-left: 65px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   .form__radio-container {
@@ -457,7 +481,8 @@
   }
 
   .form__color {
-    padding-left: 60px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   .form__checkbox-container {
@@ -476,7 +501,8 @@
   }
 
   .form__name {
-    padding-left: 63px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   .form__name-container {
@@ -515,25 +541,27 @@
   }
 
   .form__phone {
-    padding-left: 63px;
-    padding-right: 175px;
+    padding-left: 115px;
+    padding-right: 222px;
   }
 
   .form__mail {
-    padding-left: 63px;
-    padding-right: 175px;
+    padding-left: 115px;
+    padding-right: 222px;
   }
 
   .form__extra {
-    padding-left: 63px;
-    padding-right: 175px;
+    padding-left: 115px;
+    padding-right: 222px;
+    margin-bottom: 45px;
   }
 
   .form__note-text {
-    padding-right: 175px;
+    padding-right: 222px;
   }
 
   .form__btn {
     left: 225px;
+    bottom: 49px;
   }
 }
