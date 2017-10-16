@@ -81,3 +81,16 @@
     border-color: #63d1bb;
   }
 }
+
+@media #{$tablet} {
+    .modal {
+      width: 567px;
+      padding: 47px 108px;
+      margin-left: -284px;
+    }
+
+    .modal__title {
+      font-size: 30px;
+      line-height: 57px;
+    }
+}
