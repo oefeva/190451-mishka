@@ -36,7 +36,7 @@
 
 @media #{$tablet} {
   .about {
-    padding-bottom: 63px;
+    padding-bottom: 60px;
   }
 
   .about__title {
@@ -53,44 +53,38 @@
   }
 
   .about__item {
-    width: 310px;
+    width: 50%;
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 75px;
 
-    &:nth-child(1) {
+    &--eco {
       order: 0;
-      margin-bottom: 75px;
       padding-right: 80px;
     }
 
-    &:nth-child(2) {
+    &--price {
       order: 2;
-      margin-bottom: 75px;
       padding-right: 50px;
     }
 
-    &:nth-child(3) {
+    &--like {
       order: 4;
       padding-right: 70px;
     }
 
-    &:nth-child(4) {
+    &--cute {
       order: 1;
-      margin-left: 25px;
-      margin-bottom: 75px;
       padding-right: 50px;
     }
 
-    &:nth-child(5) {
+    &--support {
       order: 3;
-      margin-left: 25px;
-      margin-bottom: 75px;
       padding-right: 10px;
     }
 
-    &:nth-child(6) {
+    &--gift {
       order: 5;
-      margin-left: 25px;
       padding-right: 50px;
     }
   }
