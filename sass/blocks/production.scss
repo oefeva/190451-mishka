@@ -93,7 +93,6 @@
   .production {
     width: 1050px;
     margin-bottom: 103px;
-
     position: relative;
     padding-bottom: 61px;
   }
@@ -121,8 +120,9 @@
   .production__video {
     width: 680px;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
   }
 
   .production__img-preview {
