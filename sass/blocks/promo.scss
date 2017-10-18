@@ -9,7 +9,6 @@
   justify-content: center;
   width: 100%;
   padding-top: 70px;
-  padding-bottom: 180px;
   background-color: #f8f8f8;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,10 +19,12 @@
   width: 250px;
   text-align: center;
   margin: auto;
+  margin-bottom: 120px;
   color: $color-title;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+
 }
 
 @media #{$tablet} {
@@ -34,7 +35,6 @@
   .promo__container {
     padding-top: 81px;
     padding-right: 30px;
-    padding-bottom: 500px;
     padding-left: 30px;
     background-size: cover;
     background-position: center -35px;
@@ -44,13 +44,13 @@
     width: 500px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 500px;
   }
 }
 
 @media #{$desktop} {
   .promo__container {
     padding-top: 82px;
-    padding-bottom: 550px;
     background-position: center -95px;
   }
 
