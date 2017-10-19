@@ -119,8 +119,11 @@
   .contacts {
     padding-top: 165px;
     padding-bottom: 105px;
-    padding-left: 225px;
     position: relative;
+  }
+
+  .contacts__container {
+    padding-left: 225px;
   }
 
   .contacts__title {
