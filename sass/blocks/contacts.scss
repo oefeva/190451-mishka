@@ -86,14 +86,19 @@
   }
 
   .contacts__info {
-    display: flex;
-    flex-direction: row;
     font-size: 17px;
     margin-bottom: 10px;
   }
 
   .contacts__email {
     margin-right: 35px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contacts__address {
+    display: inline-block;
+    vertical-align: top;
   }
 
   .contacts__address-title {
