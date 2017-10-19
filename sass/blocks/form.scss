@@ -431,7 +431,6 @@
   }
 
   .form__input-text {
-    width: 500px;
     padding-left: 17px;
     padding-right: 17px;
     font-size: 19px;
@@ -456,12 +455,14 @@
       padding-bottom: 13px;
       margin-left: 135px;
       background-color: #f1f1f1;
+      width: 500px;
     }
 
     &--mail {
       padding-bottom: 13px;
       margin-left: 109px;
       background-color: #f1f1f1;
+      width: 500px;
     }
 
     &--extra {
@@ -469,6 +470,7 @@
       padding: 15px;
       resize: vertical;
       margin-left: 128px;
+      width: 500px;
     }
   }
 
