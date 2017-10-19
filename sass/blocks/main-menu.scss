@@ -1,7 +1,3 @@
-.main-menu {
-  margin-top: -58px;
-}
-
 .main-menu__container {
   display: flex;
   flex-direction: column;
@@ -18,25 +14,81 @@
   padding-left: 30px;
 
   &--interior {
-    background-color: #63d1bb;
+    background-color: $color-background-interior;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      background-color: #59d5bc;
+    }
   }
 
   &--toys {
-    background-color: #56c3b2;
+    background-color: $color-background-toys;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 }
 
 .main-menu__title {
   width: 150px;
-  color: #ffffff;
+  color: $color-main-menu-title;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   margin: 0;
+
+  &--interior {
+    &:active {
+      color: #97e2d2;
+    }
+  }
+
+  &--toys {
+    &:active {
+      color: #8dd5c9;
+    }
+  }
 }
 
 .main-menu__icon {
   width: 60px;
   height: 60px;
   margin-left: auto;
+}
+
+@media #{$tablet} {
+  .main-menu__container {
+    flex-direction: row;
+  }
+
+  .main-menu__link {
+    width: 335px;
+    padding-top: 28px;
+    padding-left: 36px;
+  }
+
+  .main-menu__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media #{$desktop} {
+  .main-menu__link {
+    width: 525px;
+  }
+
+  .main-menu__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,23 +15,35 @@
           <img src="img/logo-mobile.svg">
         </a>
 
-        <button class="page-header__toggle-nav" type="button">
-          <img src="img/icon-menu-open.svg" alt="menu">
+        <button class="page-header__toggle-nav page-header__toggle-nav--nojs" type="button">
         </button>
 
-        <nav class="main-nav">
+        <!--main-nav--opened  main-nav--nojs-->
+        <nav class="main-nav main-nav--closed  main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Каталог товаров</a>
+            <li class="main-nav__item main-nav__logo"></li>
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor main-nav__item--tablet-color">
+              <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor main-nav__item--tablet-color">
+              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <img class="main-nav__icon-search" src="img/icon-search.svg" alt="search">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item main-nav__item--cart">
+              <img class="main-nav__icon-cart" src="img/icon-cart.svg" alt="cart">
+              <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--new main-nav__item--desktop  main-nav__item--desktop-incolor main-nav__item--desktop-color">
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale main-nav__item--desktop main-nav__item--desktop-incolor main-nav__item--desktop-color">
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item main-nav__item--delivery main-nav__item--tablet  main-nav__item--incolor main-nav__item--tablet-color">
+              <span>Бесплатная доставка по России</span>
             </li>
           </ul>
         </nav>
@@ -50,7 +63,7 @@
 
             <article class="goods-item">
               <a class="goods-item__link" href="hare.html">
-                <img src="img/photo-hare-mobile@1x.jpg">
+                <img class="goods-item__img" src="img/photo-hare-mobile@1x.jpg">
               </a>
               <div class="goods-item__desc">
                 <div class="goods-item__info">
@@ -70,7 +83,7 @@
 
             <article class="goods-item">
               <a class="goods-item__link" href="basket.html">
-                <img src="img/photo-bowl-mobile@1x.jpg">
+                <img class="goods-item__img"  src="img/photo-bowl-mobile@1x.jpg">
               </a>
               <div class="goods-item__desc">
                 <div class="goods-item__info">
@@ -90,12 +103,12 @@
 
             <article class="goods-item">
               <a class="goods-item__link" href="toy-basket.html">
-                <img src="img/photo-toys-mobile@1x.jpg">
+                <img class="goods-item__img"  src="img/photo-toys-mobile@1x.jpg">
               </a>
               <div class="goods-item__desc">
-                <div class="goods-item__info">
+                <div class="goods-item__info goods-item__info--last-item">
                   <a class="goods-item__link" href="toy-basket.html">
-                    <h2 class="goods-item__title">Большая корзинка для игрушек</h2>
+                    <h2 class="goods-item__title">Большая корзинка для&nbspигрушек</h2>
                   </a>
                   <span class="goods-item__feature">Диаметр 30 см, высота 30 см</span>
                 </div>
@@ -116,8 +129,8 @@
 
             <h3 class="production__title">Процесс производства</h3>
 
-            <div class="production__img">
-              <img src="img/video-mobile@1x.jpg">
+            <div class="production__video">
+              <img class="production__img-preview" src="img/video-mobile@1x.jpg">
             </div>
 
             <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -133,6 +146,10 @@
     <footer class="page-footer">
       <div class="page-footer__container">
 
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="logo">
+        </div>
+
         <section class="social">
           <a class="social__link" href="#">
             <img class="social__icon" src="img/icon-insta.svg" alt="instagram">Instagram</a>
@@ -145,7 +162,7 @@
         <section class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="logo">
+            <img class="page-footer__logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="logo">
           </a>
         </section>
 

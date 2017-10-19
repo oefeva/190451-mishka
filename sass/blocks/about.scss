@@ -4,7 +4,7 @@
 }
 
 .about__title {
-  color: #000000;
+  color: $color-title;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -22,7 +22,7 @@
 .about__item {
   display: flex;
   flex-direction: column;
-  color: #000000;
+  color: $color-text;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -32,4 +32,80 @@
 .about__img {
   width: 35px;
   margin-bottom: 10px;
+}
+
+@media #{$tablet} {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 48px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+
+  .about__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 75px;
+
+    &--eco {
+      order: 0;
+      padding-right: 80px;
+    }
+
+    &--price {
+      order: 2;
+      padding-right: 50px;
+    }
+
+    &--like {
+      order: 4;
+      padding-right: 70px;
+    }
+
+    &--cute {
+      order: 1;
+      padding-right: 50px;
+    }
+
+    &--support {
+      order: 3;
+      padding-right: 10px;
+    }
+
+    &--gift {
+      order: 5;
+      padding-right: 50px;
+    }
+  }
+
+  .about__img {
+    margin-bottom: 10px;
+  }
+}
+
+@media #{$desktop} {
+  .about {
+    padding-left: 175px;
+    padding-bottom: 70px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__list {
+    width: 700px;
+  }
 }

@@ -1,12 +1,13 @@
 .review {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 
 .review__title {
-  color: #000000;
+  color: $color-title;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -14,7 +15,7 @@
 }
 
 .review__text {
-  color: #444444;
+  color: $color-text-paragraph;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -28,7 +29,7 @@
 }
 
 .review__user-name {
-  color: #000000;
+  color: $color-text;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -37,7 +38,7 @@
 }
 
 .review__link {
-  color: #444444;
+  color: $color-link;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
@@ -51,10 +52,95 @@
 .review__swipe {
   width: 130px;
   background-color: transparent;
-  border: 1px solid #ececec;
+  border: 1px solid $color-border;
   padding: 7px 35px;
 
   &:first-child {
     border-right: none;
+  }
+}
+
+@media #{$tablet} {
+  .review {
+    position: relative;
+    width: 768px;
+    padding-top: 43px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+
+  .review__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 33px;
+  }
+
+  .review__text {
+    font-size: 17px;
+    margin-bottom: 38px;
+  }
+
+  .review__user-name {
+    font-size: 18px;
+  }
+
+  .review__swipe-container {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+  }
+
+  .review__swipe {
+    width: 100px;
+    border: 0;
+    padding: 10px 20px;
+  }
+
+  .review__btn {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+  }
+}
+
+
+@media #{$desktop} {
+  .review {
+    width: 1150px;
+    padding-top: 25px;
+    padding-left: 225px;
+    padding-right: 150px;
+    padding-bottom: 95px;
+    background-position: 50px -2px;
+  }
+
+  .review__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .review__text {
+    margin-bottom: 20px;
+  }
+
+  .review__user-name {
+    font-size: 17px;
+  }
+
+  .review__swipe-container {
+    bottom: 83px;
+    right: 50px;
+  }
+
+  .review__swipe {
+    width: 90px;
+  }
+
+  .review__btn {
+    top: 77px;
   }
 }

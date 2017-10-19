@@ -23,3 +23,20 @@ if (link.length > 0) {
     setupKeyDownHandler(event);
   });
 }
+
+// mobile navigation
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".page-header__toggle-nav");
+
+if (navMain.classList.contains("main-nav--nojs")) {
+  navMain.classList.remove("main-nav--nojs");
+  navToggle.classList.remove("page-header__toggle-nav--nojs");
+  navToggle.classList.add("page-header__toggle-nav--open");
+}
+
+navToggle.addEventListener("click", function(event) {
+  event.preventDefault();
+  navMain.classList.toggle("main-nav--open");
+  navToggle.classList.toggle("page-header__toggle-nav--close");
+  navToggle.classList.toggle("page-header__toggle-nav--open");
+});

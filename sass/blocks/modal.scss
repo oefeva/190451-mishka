@@ -67,7 +67,7 @@
   font-weight: 700;
   width: 32%;
   padding: 16px;
-  border: 2px solid #ececec;
+  border: 2px solid $color-border;
 
   &:hover {
     border-color: #c7c7c7;
@@ -79,5 +79,18 @@
 
   &:checked + .modal__label {
     border-color: #63d1bb;
+  }
+}
+
+@media #{$tablet} {
+  .modal {
+    width: 567px;
+    padding: 47px 108px;
+    margin-left: -284px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
   }
 }

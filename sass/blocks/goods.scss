@@ -2,3 +2,26 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@media #{$tablet} {
+  .goods {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-bottom: 23px;
+  }
+}
+
+@media #{$desktop} {
+  .goods {
+    padding-top: 135px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .goods__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}

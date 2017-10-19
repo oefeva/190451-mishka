@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,23 +15,35 @@
           <img src="img/logo-mobile.svg">
         </a>
 
-        <button class="page-header__toggle-nav" type="button">
-          <img src="img/icon-menu-open.svg" alt="menu">
+        <button class="page-header__toggle-nav page-header__toggle-nav--nojs" type="button">
         </button>
 
-        <nav class="main-nav">
+        <!--main-nav--opened  main-nav--nojs-->
+        <nav class="main-nav main-nav--closed  main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <li class="main-nav__item main-nav__logo"></li>
+            <li class="main-nav__item main-nav__item--catalog main-nav__item--tablet-incolor">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item main-nav__item--form main-nav__item--tablet-incolor">
+              <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
+            <li class="main-nav__item main-nav__item--search">
+              <img class="main-nav__icon-search" src="img/icon-search.svg" alt="search">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item main-nav__item--cart">
+              <img class="main-nav__icon-cart" src="img/icon-cart.svg" alt="cart">
+              <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item main-nav__item--new main-nav__item--desktop  main-nav__item--desktop-incolor">
+              <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item main-nav__item--sale main-nav__item--desktop main-nav__item--desktop-incolor">
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item main-nav__item--delivery main-nav__item--tablet  main-nav__item--incolor">
+              <span>Бесплатная доставка по России</span>
             </li>
           </ul>
         </nav>
@@ -41,21 +54,23 @@
     <section class="promo">
       <div class="promo__container">
         <h1 class="promo__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
-      </div>
-    </section>
 
-    <section class="main-menu">
-      <div class="main-menu__container">
 
-        <a class="main-menu__link main-menu__link--interior" href="interior.html">
-            <h2 class="main-menu__title">Предметы интерьера</h2>
-            <img class="main-menu__icon" src="img/icon-interior.svg" alt="interior">
-        </a>
+        <section class="main-menu">
+          <div class="main-menu__container">
 
-        <a class="main-menu__link main-menu__link--toys" href="toys.html">
-            <h2 class="main-menu__title">Детские игрушки</h2>
-            <img class="main-menu__icon" src="img/icon-toy.svg" alt="toys">
-        </a>
+            <a class="main-menu__link main-menu__link--interior" href="interior.html">
+                <h2 class="main-menu__title main-menu__title--interior">Предметы интерьера</h2>
+                <img class="main-menu__icon" src="img/icon-interior.svg" alt="interior">
+            </a>
+
+            <a class="main-menu__link main-menu__link--toys" href="toys.html">
+                <h2 class="main-menu__title main-menu__title--toys">Детские игрушки</h2>
+                <img class="main-menu__icon" src="img/icon-toy.svg" alt="toys">
+            </a>
+
+          </div>
+        </section>
 
       </div>
     </section>
@@ -101,25 +116,28 @@
           <h2 class="about__title">Коротко о нас:</h2>
 
           <ul class="about__list">
-            <li class="about__item">
+            <li class="about__item about__item--eco">
               <img class="about__img" src="img/icon-feature-flower.svg" alt="material">Экологически чистые материалы</li>
 
-            <li class="about__item">
+            <li class="about__item about__item--price">
               <img class="about__img" src="img/icon-feature-money.svg" alt="style">Скандинавский стиль по российской цене</li>
 
-            <li class="about__item">
+            <li class="about__item about__item--like">
               <img class="about__img" src="img/icon-feature-heart.svg" alt="like">Увеличивает лайки на фотографиях</li>
 
-            <li class="about__item">
+            <li class="about__item about__item--cute">
               <img class="about__img" src="img/icon-feature-ball.svg" alt="love">Связано вручную с любовью и умилением</li>
 
-            <li class="about__item">
+            <li class="about__item about__item--support">
               <img class="about__img" src="img/icon-feature-rocket.svg" alt="rocket">Поддержка отечественного производителя</li>
 
-            <li class="about__item">
+            <li class="about__item about__item--gift">
               <img class="about__img" src="img/icon-feature-gift.svg" alt="present">Поставляется в подарочной упаковке</li>
           </ul>
         </section>
+
+      </div>
+
 
         <section class="review">
           <h2 class="review__title">Отзывы</h2>
@@ -145,7 +163,6 @@
           <a href="#" class="review__btn btn">Написать</a>
         </section>
 
-      </div>
     </main>
 
     <section class="contacts">
@@ -153,26 +170,35 @@
 
         <h2 class="contacts__title">Контакты</h2>
 
-        <table class="contacts__info">
-          <tr class="contacts__email">
-            <td class="contacts__email-title">e-mail:</td>
-            <td class="contacts__email-text"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
+        <div class="contacts__info">
 
-          <tr class="contacts__address">
-            <td class="contacts__address-title">адрес:</td>
-            <td class="contacts__address-text">г. Санкт-Петербург, <br>ул. Большая<br> Конюшенная,<br>д. 19/8, офис 101</td>
-          </tr>
-        </table>
+          <div class="contacts__email">
+            <span class="contacts__email-title">e-mail:</span>
+            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+
+          <div class="contacts__address">
+            <span class="contacts__address-title">адрес:</span>
+            <p class="contacts__address-text">г. Санкт-Петербург, <br>ул. Большая<br> Конюшенная,<br>д. 19/8, офис 101</p>
+          </div>
+
+        </div>
+
       </div>
 
         <div class="contacts__map"></div>
 
-        <a href="contact.html" class="contacts__btn btn">Напишите нам</a>
+        <div class="contacts__container">
+          <a href="contact.html" class="contacts__btn btn">Напишите нам</a>
+      </div>
     </section>
 
     <footer class="page-footer">
       <div class="page-footer__container">
+
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="logo">
+        </div>
 
         <section class="social">
           <a class="social__link" href="#">
@@ -186,7 +212,7 @@
         <section class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="logo">
+            <img class="page-footer__logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="logo">
           </a>
         </section>
 
