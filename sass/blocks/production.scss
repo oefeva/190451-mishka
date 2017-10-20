@@ -81,7 +81,6 @@
 
   .production__img-preview {
     display: block;
-    height: 455px;
   }
 
   .production__btn {
@@ -123,11 +122,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-  }
-
-  .production__img-preview {
-    width: 680px;
-    height: 455px;
+    border-bottom: none;
   }
 
   .production__btn {
