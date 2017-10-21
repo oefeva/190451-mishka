@@ -1,6 +1,9 @@
 .about {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 68px;
+  padding-bottom: 8px;
+  position: relative;
+
+  @include line;
 }
 
 .about__title {
@@ -9,6 +12,7 @@
   line-height: 30px;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .about__list {
@@ -26,48 +30,85 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 20px;
+
+  &--eco {
+    padding-right: 80px;
+    margin-bottom: 30px;
+  }
+
+  &--price {
+    padding-right: 60px;
+    margin-bottom: 35px;
+  }
+
+  &--like {
+    padding-right: 70px;
+    margin-bottom: 33px;
+  }
+
+  &--cute {
+    padding-right: 50px;
+    margin-bottom: 34px;
+  }
+
+  &--support {
+    margin-bottom: 32px;
+  }
+
+  &--gift {
+    padding-right: 40px;
+  }
 }
 
 .about__img {
   width: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   fill: #63d1bb;
 
   &--eco {
     width: 32px;
     height: 37px;
+    margin-left: 8px;
   }
 
   &--price {
     width: 47px;
     height: 27px;
+    margin-bottom: 25px;
   }
 
   &--like {
     width: 33px;
     height: 28px;
+    margin-left: 8px;
+    margin-bottom: 20px;
   }
 
   &--cute {
     width: 34px;
     height: 34px;
+    margin-left: 3px;
+    margin-bottom: 16px;
   }
 
   &--support {
     width: 54px;
     height: 23px;
+    margin-bottom: 26px;
   }
 
   &--gift {
     width: 33px;
     height: 32px;
+    margin-left: 3px;
+    margin-bottom: 19px;
   }
 }
 
 @media #{$tablet} {
   .about {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   .about__title {
@@ -87,21 +128,21 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 75px;
+    margin-bottom: 63px;
 
     &--eco {
       order: 0;
-      padding-right: 80px;
+      padding-right: 120px;
     }
 
     &--price {
       order: 2;
-      padding-right: 50px;
+      padding-right: 70px;
     }
 
     &--like {
       order: 4;
-      padding-right: 70px;
+      padding-right: 100px;
     }
 
     &--cute {
@@ -121,14 +162,32 @@
   }
 
   .about__img {
-    margin-bottom: 10px;
+    &--eco {
+      margin-bottom: 15px;
+    }
+
+    &--price {
+      margin-bottom: 23px;
+    }
+
+    &--cute {
+      margin-bottom: 20px;
+    }
+
+    &--support {
+      margin-bottom: 26px;
+    }
+
+    &--gift {
+      margin-bottom: 15px;
+    }
   }
 }
 
 @media #{$desktop} {
   .about {
     padding-left: 175px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 
   .about__title {
@@ -138,5 +197,24 @@
 
   .about__list {
     width: 700px;
+  }
+
+  .about__item {
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 62px;
+
+    &--price {
+      padding-right: 100px;
+    }
+
+    &--like {
+      padding-right: 120px;
+    }
+
+    &--gift {
+      padding-right: 80px;
+    }
   }
 }

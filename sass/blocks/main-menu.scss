@@ -8,13 +8,13 @@
 
 .main-menu__link {
   display: flex;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
 
   &--interior {
     background-color: $color-background-interior;
+    padding-top: 25px;
+    padding-right: 36px;
+    padding-bottom: 15px;
+    padding-left: 28px;
 
     &:hover {
       background-color: #59d5bc;
@@ -27,6 +27,10 @@
 
   &--toys {
     background-color: $color-background-toys;
+    padding-top: 26px;
+    padding-right: 27px;
+    padding-bottom: 18px;
+    padding-left: 29px;
 
     &:hover {
       background-color: #46c1ae;
@@ -60,7 +64,6 @@
 }
 
 .main-menu__icon {
-
   margin-left: auto;
 
   &--interior {
@@ -95,12 +98,19 @@
 @media #{$tablet} {
   .main-menu__container {
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-menu__link {
     width: 335px;
     padding-top: 28px;
+    padding-bottom: 50px;
     padding-left: 36px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   .main-menu__title {
