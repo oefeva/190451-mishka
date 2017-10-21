@@ -41,12 +41,16 @@
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+
+    @include wave;
   }
 
   .page-title__order {
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+
+    @include wave;
   }
 }
 

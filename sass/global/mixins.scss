@@ -13,3 +13,52 @@
     padding: 0 50px;
   }
 }
+
+@mixin wave {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+  }
+
+  @media #{$tablet} {
+    &::before {
+      z-index: 5;
+      height: 30px;
+      background-size: 812px auto;
+      bottom: -17px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::before {
+      z-index: 5;
+      height: 30px;
+      background-size: 812px auto;
+    }
+  }
+}
+
+@mixin line {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: round;
+    z-index: 5;
+  }
+
+  @media #{$tablet} {
+    &::before {
+      z-index: 11;
+      height: 19px;
+    }
+  }
+}
