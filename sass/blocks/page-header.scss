@@ -1,7 +1,7 @@
 .page-header {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 19px;
 }
 
 .page-header__container {
@@ -43,8 +43,8 @@
     position: absolute;
     width: 20px;
     height: 21px;
-    right: 30px;
-    top: 8px;
+    right: 31px;
+    top: 7px;
 
     &--close::before {
       content: "";
@@ -131,8 +131,8 @@
 
   .page-header__link {
     position: absolute;
-    left: 50px;
-    top: 20px;
+    left: 48px;
+    top: 22px;
     z-index: 2;
   }
 
@@ -167,8 +167,8 @@
 
   .page-header__link {
     position: absolute;
-    left: 47%;
-    top: 8px;
+    left: 501px;
+    top: 9px;
   }
 
   .page-header__logo {

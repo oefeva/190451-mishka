@@ -42,7 +42,7 @@
   fill: #d3d2d2;
   position: absolute;
   top: 30px;
-  left: 35px;
+  left: 32px;
 
   &--search {
     width: 18px;
@@ -123,7 +123,7 @@
 
     &--catalog {
       order: 3;
-      width: 165px;
+      width: 167px;
       border-bottom: none;
     }
 
@@ -135,7 +135,7 @@
     }
 
     &--delivery {
-      width: 303px;
+      width: 301px;
       order: 5;
       margin-left: auto;
       font-size: 15px;
@@ -203,13 +203,13 @@
 
   .main-nav__icon {
     &--search {
-      top: 30px;
-      left: 35px;
+      top: 37px;
+      left: 34px;
     }
 
     &--cart {
-      top: 30px;
-      left: 35px;
+      top: 35px;
+      left: 33px;
     }
   }
 }
