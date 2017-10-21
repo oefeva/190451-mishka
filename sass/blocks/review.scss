@@ -60,6 +60,21 @@
   }
 }
 
+.review__arrow {
+  width: 50px;
+  height: 26px;
+  fill: #000000;
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
+
 @media #{$tablet} {
   .review {
     position: relative;

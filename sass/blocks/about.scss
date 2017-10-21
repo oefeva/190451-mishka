@@ -32,6 +32,37 @@
 .about__img {
   width: 35px;
   margin-bottom: 10px;
+  fill: #63d1bb;
+
+  &--eco {
+    width: 32px;
+    height: 37px;
+  }
+
+  &--price {
+    width: 47px;
+    height: 27px;
+  }
+
+  &--like {
+    width: 33px;
+    height: 28px;
+  }
+
+  &--cute {
+    width: 34px;
+    height: 34px;
+  }
+
+  &--support {
+    width: 54px;
+    height: 23px;
+  }
+
+  &--gift {
+    width: 33px;
+    height: 32px;
+  }
 }
 
 @media #{$tablet} {

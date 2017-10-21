@@ -81,8 +81,17 @@
 }
 
 .goods-item__btn-img {
+  fill: #d3d2d2;
   width: 20px;
-  height: 20px;
+  height: 19px;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #d0f1ea;
+  }
 }
 
 @media #{$tablet} {

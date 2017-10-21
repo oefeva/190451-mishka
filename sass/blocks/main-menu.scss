@@ -60,9 +60,36 @@
 }
 
 .main-menu__icon {
-  width: 60px;
-  height: 60px;
+
   margin-left: auto;
+
+  &--interior {
+    fill: #3bb09d;
+    width: 40px;
+    height: 62px;
+
+    &:hover {
+      fill: #29a592;
+    }
+
+    &:active {
+      fill: #44c0aa;
+    }
+  }
+
+  &--toy {
+    fill: #35a999;
+    width: 60px;
+    height: 60px;
+
+    &:hover {
+      fill: #239f8e;
+    }
+
+    &:active {
+      fill: #37b2a0;
+    }
+  }
 }
 
 @media #{$tablet} {

@@ -8,9 +8,18 @@
 }
 
 .page-footer__logo-htmlacademy {
-  width: 25px;
-  height: 35px;
+  width: 27px;
+  height: 34px;
   margin-left: 30px;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #bde3dd;
+  }
 }
 
 .page-footer__copyright-link {
@@ -35,6 +44,20 @@
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .page-footer__logo-img {
+    fill: #231f20;
+    width: 85px;
+    height: 35px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #bde3dd;
+    }
   }
 
   .page-footer__copyright {

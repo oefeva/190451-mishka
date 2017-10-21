@@ -11,8 +11,30 @@
 }
 
 .social__icon {
-  width: 24px;
-  height: 20px;
+  fill: #221f1f;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #c7e5e1;
+  }
 }
 
 @media #{$tablet} {

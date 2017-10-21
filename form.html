@@ -12,7 +12,19 @@
       <div class="page-header__container">
 
         <a class="page-header__link" href="index.html">
-          <img src="img/logo-mobile.svg">
+
+          <svg class="page-header__logo page-header__logo--mobile" role="img">
+            <use xlink:href="img/map.svg#logo-mobile"/>
+          </svg>
+
+          <svg class="page-header__logo page-header__logo--tablet" role="img">
+            <use xlink:href="img/map.svg#logo-tablet"/>
+          </svg>
+
+          <svg class="page-header__logo page-header__logo--desktop" role="img">
+            <use xlink:href="img/map.svg#logo-desktop"/>
+          </svg>
+
         </a>
 
         <button class="page-header__toggle-nav page-header__toggle-nav--nojs" type="button">
@@ -29,11 +41,15 @@
               <a class="main-nav__link main-nav__link--form">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
-              <img class="main-nav__icon-search" src="img/icon-search.svg" alt="search">
+              <svg class="main-nav__icon main-nav__icon--search" role="img">
+                <use xlink:href="img/map.svg#icon-search"/>
+              </svg>
               <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
-              <img class="main-nav__icon-cart" src="img/icon-cart.svg" alt="cart">
+              <svg class="main-nav__icon main-nav__icon--cart" role="img">
+                <use xlink:href="img/map.svg#icon-cart"/>
+              </svg>
               <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
             </li>
             <li class="main-nav__item main-nav__item--new main-nav__item--desktop  main-nav__item--desktop-incolor main-nav__item--desktop-color">
@@ -155,6 +171,9 @@
             <div class="form__container">
               <h3 class="form__subtitle form__subtitle--phone">Тел</h3>
               <input class="form__input-text form__input-text--phone" type="tel" name="tel" placeholder="+7 XXX XX XX*" pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+              <svg class="form__icon form__icon--phone" role="img">
+                <use xlink:href="img/map.svg#icon-phone"/>
+              </svg>
             </div>
           </div>
 
@@ -162,6 +181,9 @@
             <div class="form__container">
               <h3 class="form__subtitle form__subtitle--mail">E-Mail</h3>
               <input class="form__input-text form__input-text--mail" type="email" name="e-mail" placeholder="Ваш Email*" required>
+              <svg class="form__icon form__icon--mail" role="img">
+                <use xlink:href="img/map.svg#icon-mail"/>
+              </svg>
             </div>
           </div>
 
@@ -186,22 +208,35 @@
       <div class="page-footer__container">
 
         <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" alt="logo">
+          <svg class="page-footer__logo-img" role="img">
+            <use xlink:href="img/map.svg#logo-mobile"/>
+          </svg>
         </div>
 
         <section class="social">
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-insta.svg" alt="instagram">Instagram</a>
+            <svg class="social__icon social__icon--instagram" role="img">
+              <use xlink:href="img/map.svg#icon-instagram"/>
+            </svg>
+          </a>
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-fb.svg" alt="facebook">Facebook</a>
+            <svg class="social__icon social__icon--facebook" role="img">
+              <use xlink:href="img/map.svg#icon-facebook"/>
+            </svg>
+          </a>
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-twitter.svg" alt="twitter">Twitter</a>
+            <svg class="social__icon social__icon--twitter" role="img">
+              <use xlink:href="img/map.svg#icon-twitter"/>
+            </svg>
+          </a>
         </section>
 
         <section class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <img class="page-footer__logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="logo">
+            <svg class="page-footer__logo-htmlacademy" role="img">
+              <use xlink:href="img/map.svg#logo-htmlacademy"/>
+            </svg>
           </a>
         </section>
 
@@ -209,6 +244,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
   </body>
 </html>

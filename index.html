@@ -12,7 +12,19 @@
       <div class="page-header__container">
 
         <a class="page-header__link" href="#">
-          <img src="img/logo-mobile.svg">
+
+            <svg class="page-header__logo page-header__logo--mobile" role="img">
+              <use xlink:href="img/map.svg#logo-mobile"/>
+            </svg>
+
+            <svg class="page-header__logo page-header__logo--tablet" role="img">
+              <use xlink:href="img/map.svg#logo-tablet"/>
+            </svg>
+
+            <svg class="page-header__logo page-header__logo--desktop" role="img">
+              <use xlink:href="img/map.svg#logo-desktop"/>
+            </svg>
+
         </a>
 
         <button class="page-header__toggle-nav page-header__toggle-nav--nojs" type="button">
@@ -29,11 +41,15 @@
               <a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item main-nav__item--search">
-              <img class="main-nav__icon-search" src="img/icon-search.svg" alt="search">
+              <svg class="main-nav__icon main-nav__icon--search" role="img">
+                <use xlink:href="img/map.svg#icon-search"/>
+              </svg>
               <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-nav__item main-nav__item--cart">
-              <img class="main-nav__icon-cart" src="img/icon-cart.svg" alt="cart">
+              <svg class="main-nav__icon main-nav__icon--cart" role="img">
+                <use xlink:href="img/map.svg#icon-cart"/>
+              </svg>
               <a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
             </li>
             <li class="main-nav__item main-nav__item--new main-nav__item--desktop  main-nav__item--desktop-incolor">
@@ -61,12 +77,18 @@
 
             <a class="main-menu__link main-menu__link--interior" href="interior.html">
                 <h2 class="main-menu__title main-menu__title--interior">Предметы интерьера</h2>
-                <img class="main-menu__icon" src="img/icon-interior.svg" alt="interior">
+
+                <svg class="main-menu__icon main-menu__icon--interior" role="img">
+                  <use xlink:href="img/map.svg#icon-interior"/>
+                </svg>
             </a>
 
             <a class="main-menu__link main-menu__link--toys" href="toys.html">
                 <h2 class="main-menu__title main-menu__title--toys">Детские игрушки</h2>
-                <img class="main-menu__icon" src="img/icon-toy.svg" alt="toys">
+
+                <svg class="main-menu__icon main-menu__icon--toy" role="img">
+                  <use xlink:href="img/map.svg#icon-toy"/>
+                </svg>
             </a>
 
           </div>
@@ -121,22 +143,34 @@
 
           <ul class="about__list">
             <li class="about__item about__item--eco">
-              <img class="about__img" src="img/icon-feature-flower.svg" alt="material">Экологически чистые материалы</li>
+            <svg class="about__img about__img--eco" role="img">
+              <use xlink:href="img/map.svg#icon-eco"/>
+            </svg>Экологически чистые материалы</li>
 
             <li class="about__item about__item--price">
-              <img class="about__img" src="img/icon-feature-money.svg" alt="style">Скандинавский стиль по российской цене</li>
+              <svg class="about__img about__img--price" role="img">
+                <use xlink:href="img/map.svg#icon-price"/>
+              </svg>Скандинавский стиль по российской цене</li>
 
             <li class="about__item about__item--like">
-              <img class="about__img" src="img/icon-feature-heart.svg" alt="like">Увеличивает лайки на фотографиях</li>
+              <svg class="about__img about__img--like" role="img">
+                <use xlink:href="img/map.svg#icon-like"/>
+              </svg>Увеличивает лайки на фотографиях</li>
 
             <li class="about__item about__item--cute">
-              <img class="about__img" src="img/icon-feature-ball.svg" alt="love">Связано вручную с любовью и умилением</li>
+              <svg class="about__img about__img--cute" role="img">
+                <use xlink:href="img/map.svg#icon-cute"/>
+              </svg>Связано вручную с любовью и умилением</li>
 
             <li class="about__item about__item--support">
-              <img class="about__img" src="img/icon-feature-rocket.svg" alt="rocket">Поддержка отечественного производителя</li>
+              <svg class="about__img about__img--support" role="img">
+                <use xlink:href="img/map.svg#icon-support"/>
+              </svg>Поддержка отечественного производителя</li>
 
             <li class="about__item about__item--gift">
-              <img class="about__img" src="img/icon-feature-gift.svg" alt="present">Поставляется в подарочной упаковке</li>
+              <svg class="about__img about__img--gift" role="img">
+                <use xlink:href="img/map.svg#icon-gift"/>
+              </svg>Поставляется в подарочной упаковке</li>
           </ul>
         </section>
 
@@ -156,10 +190,14 @@
 
           <div class="review__swipe-container">
             <button class="review__swipe" type="button">
-              <img src="img/icon-left-arrow.svg" alt="left arrow">
+              <svg class="review__arrow review__arrow--left" role="img">
+                <use xlink:href="img/map.svg#arrow-left"/>
+              </svg>
             </button>
             <button class="review__swipe" type="button">
-              <img src="img/icon-right-arrow.svg" alt="right arrow">
+              <svg class="review__arrow review__arrow--right" role="img">
+                <use xlink:href="img/map.svg#arrow-right"/>
+              </svg>
             </button>
           </div>
 
@@ -170,6 +208,10 @@
 
     <section class="contacts">
       <div class="contacts__container">
+
+        <svg class="contacts__icon-flag" role="img">
+          <use xlink:href="img/map.svg#icon-flag"/>
+        </svg>
 
         <h2 class="contacts__title">Контакты</h2>
 
@@ -189,7 +231,11 @@
 
       </div>
 
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <svg class="contacts__icon-map-pin" role="img">
+            <use xlink:href="img/map.svg#icon-map-pin"/>
+          </svg>
+        </div>
 
         <div class="contacts__container">
           <a href="contact.html" class="contacts__btn btn">Напишите нам</a>
@@ -200,22 +246,35 @@
       <div class="page-footer__container">
 
         <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" alt="logo">
+          <svg class="page-footer__logo-img" role="img">
+            <use xlink:href="img/map.svg#logo-mobile"/>
+          </svg>
         </div>
 
         <section class="social">
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-insta.svg" alt="instagram">Instagram</a>
+            <svg class="social__icon social__icon--instagram" role="img">
+              <use xlink:href="img/map.svg#icon-instagram"/>
+            </svg>
+          </a>
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-fb.svg" alt="facebook">Facebook</a>
+            <svg class="social__icon social__icon--facebook" role="img">
+              <use xlink:href="img/map.svg#icon-facebook"/>
+            </svg>
+          </a>
           <a class="social__link" href="#">
-            <img class="social__icon" src="img/icon-twitter.svg" alt="twitter">Twitter</a>
+            <svg class="social__icon social__icon--twitter" role="img">
+              <use xlink:href="img/map.svg#icon-twitter"/>
+            </svg>
+          </a>
         </section>
 
         <section class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
-            <img class="page-footer__logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="logo">
+            <svg class="page-footer__logo-htmlacademy" role="img">
+              <use xlink:href="img/map.svg#logo-htmlacademy"/>
+            </svg>
           </a>
         </section>
 
@@ -245,6 +304,8 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
   </body>
 </html>

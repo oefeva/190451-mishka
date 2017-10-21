@@ -7,6 +7,10 @@
   @include container;
 }
 
+.contacts__icon-flag {
+  display: none;
+}
+
 .contacts__title {
   color: $color-title;
   font-size: 18px;
@@ -66,6 +70,7 @@
 }
 
 .contacts__map {
+  position: relative;
   background-color: #c6c6c6;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -80,11 +85,31 @@
   }
 }
 
+.contacts__icon-map-pin {
+  position: absolute;
+  width: 66px;
+  height: 101px;
+  top: 200px;
+  left: 170px;
+}
+
 .contacts__btn {
   margin: 38px auto;
 }
 
 @media #{$tablet} {
+  .contacts__container {
+    position: relative;
+  }
+
+  .contacts__icon-flag {
+    position: absolute;
+    right: 70px;
+    display: block;
+    width: 47px;
+    height: 82px;
+  }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -126,6 +151,11 @@
     }
   }
 
+  .contacts__icon-map-pin {
+    top: 180px;
+    left: 370px;
+  }
+
   .contacts__btn {
     width: 230px;
     margin-top: 10px;
@@ -142,6 +172,10 @@
 
   .contacts__container {
     padding-left: 225px;
+  }
+
+  .contacts__icon-flag {
+    left: 50px;
   }
 
   .contacts__title {
@@ -198,6 +232,11 @@
     .contacts__map {
       background-image: url("../img/map-desktop@2x.jpg");
     }
+  }
+
+  .contacts__icon-map-pin {
+    top: 170px;
+    left: 230px;
   }
 
   .contacts__btn {

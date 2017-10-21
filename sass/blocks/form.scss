@@ -7,6 +7,7 @@
   @include container;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form__intro-text {
@@ -195,6 +196,34 @@
 
 .form__mail {
   margin-bottom: 32px;
+}
+
+.form__icon {
+  fill: #cccccc;
+
+  &--phone {
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  &--mail {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  &:hover {
+    fill: #62d1ba;
+  }
+
+  &:active {
+    fill: #62d1ba;
+  }
 }
 
 .form__extra {
@@ -425,6 +454,19 @@
     padding-bottom: 49px;
   }
 
+  .form__icon {
+    &--phone {
+      right: 55px;
+      top: 0;
+    }
+
+    &--mail {
+      top: 0;
+      right: 55px;
+    }
+  }
+
+
   .form__extra {
     margin-bottom: 48px;
     padding-top: 15px;
@@ -564,6 +606,18 @@
       padding: 15px;
       resize: vertical;
       margin-left: 70px;
+    }
+  }
+
+  .form__icon {
+    &--phone {
+      right: 225px;
+      top: 0;
+    }
+
+    &--mail {
+      top: 0;
+      right: 225px;
     }
   }
 

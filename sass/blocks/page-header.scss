@@ -12,6 +12,29 @@
   @include container;
 }
 
+.page-header__logo {
+  &--mobile {
+    width: 85px;
+    height: 35px;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
 @media #{$mobile-only} {
   .page-header__toggle-nav {
     border: none;
@@ -109,8 +132,24 @@
   .page-header__link {
     position: absolute;
     left: 50px;
-    top: 30px;
+    top: 20px;
     z-index: 2;
+  }
+
+  .page-header__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      width: 112px;
+      height: 46px;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .page-header__toggle-nav {
@@ -129,6 +168,24 @@
   .page-header__link {
     position: absolute;
     left: 47%;
-    top: 30px;
+    top: 8px;
+  }
+
+  .page-header__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+      width: 112px;
+      height: 46px;
+    }
+
+    &--desktop {
+      width: 148px;
+      height: 72px;
+      display: block;
+    }
   }
 }
