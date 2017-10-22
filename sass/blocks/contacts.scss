@@ -1,6 +1,9 @@
 .contacts {
   padding-top: 60px;
   padding-bottom: 40px;
+  position: relative;
+
+  @include line-1;
 }
 
 .contacts__container {
