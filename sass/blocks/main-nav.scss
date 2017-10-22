@@ -14,7 +14,7 @@
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 46px;
+  padding-left: 76px;
   margin: 0;
 
   &:hover {
@@ -42,7 +42,7 @@
   fill: #d3d2d2;
   position: absolute;
   top: 30px;
-  left: 0;
+  left: 30px;
 
   &--search {
     width: 18px;
@@ -65,9 +65,10 @@
 
 @media #{$mobile-only} {
   .main-nav {
-    top: 43px;
+    top: 41px;
     display: block;
-    left: 160px;
+    // position: absolute;
+    left: 0;
     right: 0;
     z-index: 2;
     background-color: #ffffff;
@@ -78,8 +79,24 @@
       margin-left: 0;
     }
 
-    &--open {
+    &--nojs .main-nav__link {
+      padding-left: 46px;
+    }
+
+    &--nojs .main-nav__icon {
+      left: 10px;
+    }
+
+    &--withjs {
       display: none;
+      position: absolute;
+    }
+
+    &--open {
+      // display: flex;
+      display: block;
+      // position: static;
+
     }
 
     .main-nav__item--tablet {
@@ -93,7 +110,6 @@
     .main-nav__list {
       width: 100%;
       margin-bottom: 0;
-      margin-top: 0;
     }
   }
 }
