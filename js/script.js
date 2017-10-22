@@ -37,6 +37,6 @@ if (navMain.classList.contains("main-nav--nojs")) {
 navToggle.addEventListener("click", function(event) {
   event.preventDefault();
   navMain.classList.toggle("main-nav--open");
-  navToggle.classList.toggle("page-header__toggle-nav--close");
   navToggle.classList.toggle("page-header__toggle-nav--open");
+  navToggle.classList.toggle("page-header__toggle-nav--close");
 });
