@@ -1,9 +1,6 @@
 .contacts {
   padding-top: 60px;
   padding-bottom: 40px;
-  position: relative;
-
-  @include line-1;
 }
 
 .contacts__container {
@@ -93,15 +90,6 @@
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.contacts__icon-map-pin {
-  position: absolute;
-  width: 66px;
-  height: 101px;
-  top: 150px;
-  left: 160px;
-  z-index: 5;
 }
 
 .contacts__btn {

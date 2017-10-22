@@ -24,7 +24,6 @@
       height: 36px;
       width: 100%;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 80% 100%;
       background-repeat: repeat-x;
       z-index: 10;
     }
@@ -54,7 +53,6 @@
     &::after {
       z-index: 11;
       height: 19px;
-      background-size: 812px auto;
       top: -20px;
     }
   }
@@ -65,7 +63,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30px;
+    bottom: -50px;
     left: 0;
     width: 100%;
     height: 15px;
@@ -76,7 +74,7 @@
   @media #{$tablet} {
     &::after {
       z-index: 11;
-      top: 80px;
+      bottom: -100px;
     }
   }
 
@@ -85,7 +83,7 @@
       z-index: 11;
       height: 19px;
       background-size: 812px auto;
-      top: 50px;
+      bottom: -50px;
     }
   }
 }

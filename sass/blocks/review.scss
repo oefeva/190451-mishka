@@ -4,6 +4,9 @@
   width: 320px;
   margin: 0 auto;
   padding: 10px 30px;
+  position: relative;
+
+  @include line-1;
 }
 
 .review__title {
