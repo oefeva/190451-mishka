@@ -4,11 +4,12 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1;
+  z-index: 100;
   margin-top: -168px;
   margin-left: -160px;
   width: 320px;
   padding: 30px;
+  padding-bottom: 40px;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
@@ -46,6 +47,7 @@
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .modal__subtitle {
@@ -53,11 +55,13 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .modal__wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal__label {
@@ -66,7 +70,7 @@
   line-height: 16px;
   font-weight: 700;
   width: 32%;
-  padding: 16px;
+  padding: 15px 35px 15px 35px;
   border: 2px solid $color-border;
 
   &:hover {
@@ -82,15 +86,36 @@
   }
 }
 
+.modal__btn {
+  background-color: #63d1bb;
+  border: none;
+  color: #ffffff;
+}
+
 @media #{$tablet} {
   .modal {
     width: 567px;
-    padding: 47px 108px;
+    padding: 7px 50px;
+    padding-bottom: 45px;
     margin-left: -284px;
   }
 
   .modal__title {
     font-size: 30px;
     line-height: 57px;
+    margin-bottom: 15px;
+  }
+
+  .modal__subtitle {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .modal__label {
+    padding: 15px 50px 15px 50px;
+  }
+
+  .modal__btn {
+    width: 350px;
   }
 }

@@ -25,13 +25,16 @@ if (link.length > 0) {
 }
 
 // mobile navigation
+var pageHeader = document.querySelector(".page-header");
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".page-header__toggle-nav");
 
-if (navMain.classList.contains("main-nav--nojs")) {
+if (pageHeader.classList.contains("page-header--nojs")) {
+  pageHeader.classList.remove("page-header--nojs");
   navMain.classList.remove("main-nav--nojs");
   navToggle.classList.remove("page-header__toggle-nav--nojs");
   navToggle.classList.add("page-header__toggle-nav--open");
+  navMain.classList.add("main-nav--withjs");
 }
 
 navToggle.addEventListener("click", function(event) {
