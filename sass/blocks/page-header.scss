@@ -2,14 +2,20 @@
   width: 100%;
   padding-top: 22px;
   padding-bottom: 19px;
+  padding-bottom: 0;
 }
 
 .page-header__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
 
   @include container;
+}
+
+.page-header__link {
+  text-align: center;
 }
 
 .page-header__logo {

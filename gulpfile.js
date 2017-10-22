@@ -80,6 +80,7 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style",
+    "images",
     "html",
     done
   );
