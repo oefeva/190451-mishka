@@ -57,7 +57,7 @@
 
 .product__image {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .product__price {
@@ -71,7 +71,7 @@
 
 @media #{$tablet} {
   .product {
-    padding-top: 46px;
+    padding-top: 25px;
     padding-bottom: 87px;
     position: relative;
   }
@@ -122,7 +122,7 @@
   .product__image {
     position: absolute;
     left: 50%;
-    top: 153px;
+    top: 133px;
   }
 
   .product__price {
@@ -135,7 +135,7 @@
 
 @media #{$desktop} {
   .product {
-    padding-top: 78px;
+    padding-top: 103px;
     padding-bottom: 125px;
   }
 
@@ -160,16 +160,20 @@
   }
 
   .product__desc {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .product__image {
-    top: 25px;
+    top: 50px;
     z-index: -1;
   }
 
   .product__table {
     margin-bottom: 90px;
+  }
+
+  .product__value {
+    padding-left: 8px;
   }
 
   .product__price {

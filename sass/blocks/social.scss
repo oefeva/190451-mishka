@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 25px 62px 30px 57px;
 }
 
 .social__link {
@@ -11,8 +11,30 @@
 }
 
 .social__icon {
-  width: 24px;
-  height: 20px;
+  fill: #221f1f;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #c7e5e1;
+  }
 }
 
 @media #{$tablet} {
@@ -20,11 +42,11 @@
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 175px;
+    margin-left: 70px;
   }
 
   .social__link {
-    margin-right: 35px;
+    margin-right: 40px;
 
     &:last-child {
       margin-right: 0;
@@ -34,6 +56,7 @@
 
 @media #{$desktop} {
   .social {
-    margin-left: 365px;
+    padding-top: 8px;
+    margin-left: 75px;
   }
 }

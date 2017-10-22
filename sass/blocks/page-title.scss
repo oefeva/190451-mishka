@@ -23,7 +23,7 @@
 @media #{$tablet} {
   .page-title {
     position: relative;
-    padding: 20px 30px 80px 30px;
+    padding: 23px 30px 80px 30px;
 
     &::after {
       position: absolute;
@@ -41,18 +41,22 @@
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+
+    @include wave;
   }
 
   .page-title__order {
     margin: 0;
     font-size: 43px;
     line-height: 50px;
+
+    @include wave;
   }
 }
 
 @media #{$desktop} {
   .page-title {
-    padding: 20px 30px 100px 30px;
+    padding: 22px 30px 100px 30px;
 
     &::after {
       top: -74px;
