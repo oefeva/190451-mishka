@@ -15,28 +15,18 @@
 }
 
 @mixin wave {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-  }
-
   @media #{$tablet} {
     &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 36px;
+      width: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 80% 100%;
+      background-repeat: repeat-x;
       z-index: 10;
-      height: 30px;
-      bottom: 0;
-    }
-  }
-
-  @media #{$desktop} {
-    &::before {
-      // z-index: 5;
-      height: 42px;
-      bottom: -8px;
     }
   }
 }
