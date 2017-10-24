@@ -23,14 +23,14 @@
 }
 
 .promo__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
   width: 250px;
   text-align: center;
   margin: auto;
   margin-bottom: 122px;
   color: $color-title;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
 }
 
 @media #{$tablet} {
