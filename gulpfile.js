@@ -13,6 +13,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
+var uglify = require("gulp-uglify");
 
 
 gulp.task("style", function() {
@@ -74,6 +75,13 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+gulp.task("scripts", function() {
+  return gulp.src("js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("build", function(done) {
   run(
     "clean",
@@ -81,6 +89,7 @@ gulp.task("build", function(done) {
     "style",
     "images",
     "html",
+    "scripts",
     done
   );
 });
