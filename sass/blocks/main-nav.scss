@@ -178,11 +178,11 @@
       background-color: #f1f1f1;
       z-index: 1;
     }
-  }
 
-  .main-nav__logo {
-    width: 320px;
-    border-bottom: 1px solid #ececec;
+    &--logo {
+      width: 320px;
+      border-bottom: 1px solid #ececec;
+    }
   }
 
   .main-nav__list {
@@ -288,6 +288,12 @@
     &--desktop-color {
       background-color: #f1f1f1;
     }
+
+    &--logo {
+      width: 317px;
+      order: 3;
+      margin-right: auto;
+    }
   }
 
   .main-nav__link {
@@ -317,12 +323,6 @@
       padding-top: 18px;
       font-size: 15px;
     }
-  }
-
-  .main-nav__logo {
-    width: 317px;
-    order: 3;
-    margin-right: auto;
   }
 
   .main-nav__icon {
