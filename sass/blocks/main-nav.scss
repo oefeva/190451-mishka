@@ -67,7 +67,6 @@
   .main-nav {
     top: 41px;
     display: block;
-    // position: absolute;
     left: 0;
     right: 0;
     z-index: 2;
@@ -93,9 +92,7 @@
     }
 
     &--open {
-      // display: flex;
       display: block;
-      // position: static;
 
     }
 

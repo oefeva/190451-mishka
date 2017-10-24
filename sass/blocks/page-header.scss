@@ -22,25 +22,15 @@
 }
 
 .page-header__logo {
-  &--mobile {
-    width: 85px;
-    height: 35px;
-  }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+  width: 85px;
+  height: 35px;
 
   &:hover {
-    fill: #666666;
+    opacity: 0.6;
   }
 
   &:active {
-    fill: #b2b2b2;
+    opacity: 0.3;
   }
 }
 
@@ -126,19 +116,8 @@
   }
 
   .page-header__logo {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-      width: 112px;
-      height: 46px;
-    }
-
-    &--desktop {
-      display: none;
-    }
+    width: 112px;
+    height: 46px;
   }
 
   .page-header__toggle-nav {
@@ -161,20 +140,7 @@
   }
 
   .page-header__logo {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: none;
-      width: 112px;
-      height: 46px;
-    }
-
-    &--desktop {
-      width: 148px;
-      height: 72px;
-      display: block;
-    }
+    width: 148px;
+    height: 72px;
   }
 }
