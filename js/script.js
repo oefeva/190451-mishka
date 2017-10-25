@@ -1,15 +1,15 @@
 // modal
-var link = document.querySelectorAll('.modal-btn');
+var link = document.querySelectorAll(".modal-btn");
 
 if (link.length > 0) {
-  var modal = document.querySelector('.modal');
-  var overlay = document.querySelector('.modal__overlay');
+  var modal = document.querySelector(".modal");
+  var overlay = document.querySelector(".modal__overlay");
 
   for (var i = 0; i < link.length; i++) {
-    link[i].addEventListener('click', function(event) {
+    link[i].addEventListener("click", function(event) {
       event.preventDefault();
-      modal.classList.add('modal--show');
-      overlay.classList.add('modal__overlay--show');
+      modal.classList.add("modal--show");
+      overlay.classList.add("modal__overlay--show");
     })
   }
 
@@ -19,7 +19,7 @@ if (link.length > 0) {
     }
   };
 
-  document.addEventListener('keydown', function() {
+  document.addEventListener("keydown", function() {
     setupKeyDownHandler(event);
   });
 }

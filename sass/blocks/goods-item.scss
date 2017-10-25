@@ -97,7 +97,6 @@
 @media #{$tablet} {
   .goods-item {
     width: 668px;
-    height: 334px;
     flex-direction: row;
     padding-bottom: 0;
     margin-bottom: 54px;
@@ -107,11 +106,15 @@
     margin-bottom: 0;
   }
 
+  .goods-item__img {
+    display: block;
+  }
+
   .goods-item__desc {
     width: 334px;
     padding-top: 8px;
     padding-right: 32px;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
     padding-left: 27px;
     justify-content: space-between;
   }
@@ -142,11 +145,14 @@
   .goods-item {
     flex-direction: column;
     width: 315px;
-    height: 660px;
+
+    &:last-child {
+      margin-bottom: 55px;
+    }
   }
 
   .goods-item__desc {
-    padding-top: 9px;
+    padding-top: 13px;
     padding-right: 50px;
     padding-left: 26px;
   }

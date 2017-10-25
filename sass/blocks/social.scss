@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 62px 30px 57px;
+  padding: 25px 62px 27px 57px;
 }
 
 .social__link {
@@ -42,7 +42,7 @@
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 70px;
+    margin-left: 75px;
   }
 
   .social__link {
@@ -56,7 +56,7 @@
 
 @media #{$desktop} {
   .social {
-    padding-top: 8px;
-    margin-left: 75px;
+    margin-left: 76px;
+    padding-top: 6px;
   }
 }
