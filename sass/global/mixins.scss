@@ -68,7 +68,7 @@
     position: absolute;
     top: 30px;
     left: 0;
-    width: 100%;
+    width: 260px;
     height: 15px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: round;
@@ -78,6 +78,7 @@
     &::after {
       z-index: 11;
       top: -35px;
+      width: 667px;
     }
   }
 
@@ -86,18 +87,18 @@
       z-index: 11;
       height: 19px;
       top: -50px;
+      width: 1050px;
     }
   }
 }
-
 
 @mixin line-1 {
   &::after {
     content: "";
     position: absolute;
     bottom: -45px;
-    left: 0;
-    width: 100%;
+    left: 30px;
+    width: 260px;
     height: 15px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: round;
@@ -107,6 +108,8 @@
     &::after {
       z-index: 11;
       bottom: -100px;
+      width: 667px;
+      left: 50px;
     }
   }
 
@@ -115,6 +118,7 @@
       z-index: 11;
       height: 19px;
       bottom: -60px;
+      width: 1050px;
     }
   }
 }

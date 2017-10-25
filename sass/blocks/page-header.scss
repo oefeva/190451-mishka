@@ -35,13 +35,18 @@
 }
 
 @media #{$mobile-only} {
+  .page-header__link {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
   .page-header__toggle-nav {
     border: none;
     background-color: transparent;
     display: block;
     position: absolute;
     width: 20px;
-    height: 50px;
+    height: 21px;
     right: 31px;
     top: 7px;
 
