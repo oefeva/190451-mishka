@@ -43,7 +43,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: -3px;
+      bottom: -8px;
       left: 0;
       height: 36px;
       width: 100%;
@@ -55,7 +55,7 @@
 
   @media #{$desktop} {
     &::before {
-      bottom: 0;
+      bottom: -1px;
       height: 33px;
       background-repeat: repeat-x;
     }
