@@ -67,7 +67,6 @@
   .main-nav {
     top: 41px;
     display: block;
-    // position: absolute;
     left: 0;
     right: 0;
     z-index: 2;
@@ -93,10 +92,7 @@
     }
 
     &--open {
-      // display: flex;
       display: block;
-      // position: static;
-
     }
 
     .main-nav__item--tablet {
@@ -110,6 +106,10 @@
     .main-nav__list {
       width: 100%;
       margin-bottom: 0;
+    }
+
+    .main-nav__link {
+      padding-right: 30px;
     }
   }
 }
@@ -149,6 +149,7 @@
       width: 265px;
       text-align: right;
       border-bottom: 1px solid #ececec;
+      padding-left: 70px;
     }
 
     &--delivery {
@@ -178,11 +179,11 @@
       background-color: #f1f1f1;
       z-index: 1;
     }
-  }
 
-  .main-nav__logo {
-    width: 320px;
-    border-bottom: 1px solid #ececec;
+    &--logo {
+      width: 320px;
+      border-bottom: 1px solid #ececec;
+    }
   }
 
   .main-nav__list {
@@ -288,6 +289,12 @@
     &--desktop-color {
       background-color: #f1f1f1;
     }
+
+    &--logo {
+      width: 317px;
+      order: 3;
+      margin-right: auto;
+    }
   }
 
   .main-nav__link {
@@ -317,12 +324,6 @@
       padding-top: 18px;
       font-size: 15px;
     }
-  }
-
-  .main-nav__logo {
-    width: 317px;
-    order: 3;
-    margin-right: auto;
   }
 
   .main-nav__icon {

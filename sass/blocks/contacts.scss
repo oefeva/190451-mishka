@@ -120,7 +120,7 @@
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .contacts__info {
@@ -160,11 +160,6 @@
     }
   }
 
-  .contacts__icon-map-pin {
-    top: 150px;
-    left: 410px;
-  }
-
   .contacts__btn {
     width: 230px;
     margin-top: 10px;
@@ -175,7 +170,7 @@
 @media #{$desktop} {
   .contacts {
     padding-top: 160px;
-    padding-bottom: 105px;
+    padding-bottom: 103px;
     position: relative;
   }
 
@@ -185,6 +180,7 @@
 
   .contacts__icon-flag {
     left: 113px;
+    top: -9px;
   }
 
   .contacts__title {
@@ -241,11 +237,6 @@
     .contacts__map {
       background-image: url("../img/map-desktop@2x.jpg");
     }
-  }
-
-  .contacts__icon-map-pin {
-    top: 170px;
-    left: 230px;
   }
 
   .contacts__btn {
